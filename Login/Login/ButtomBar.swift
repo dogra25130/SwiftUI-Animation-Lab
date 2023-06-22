@@ -14,38 +14,32 @@ struct BottomBar: View {
             Button {
                 
             } label: {
-                ZStack {
-                    RoundedRectangle(cornerRadius: 12)
-                        .frame(height: 60)
-                        .foregroundColor(.white)
-                    Text("Continue with Apple")
-                        .font(.title3)
-                        .foregroundColor(.black)
-                }
+                Label("Continue with Apple", systemImage: "applelogo")
+                    .fontWeight(.bold)
+                    .foregroundColor(.black)
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 15)
+                    .background(.white, in: RoundedRectangle(cornerRadius: 12))
             }
             Button {
                 
             } label: {
-                ZStack {
-                    RoundedRectangle(cornerRadius: 12)
-                        .frame(height: 60)
-                        .foregroundColor(.gray)
-                    Text("Continue with Email")
-                        .font(.title3)
-                        .foregroundColor(.white)
-                }
+                Label("Continue with Phone", systemImage: "phone.fill")
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 15)
+                    .background(.gray, in: RoundedRectangle(cornerRadius: 12))
             }
             Button {
                 
             } label: {
-                ZStack {
-                    RoundedRectangle(cornerRadius: 12)
-                        .frame(height: 60)
-                        .foregroundColor(.gray)
-                    Text("Continue with Phone")
-                        .font(.title3)
-                        .foregroundColor(.white)
-                }
+                Label("Signup with Email", systemImage: "envelope.fill")
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 15)
+                    .background(.gray, in: RoundedRectangle(cornerRadius: 12))
             }
             
         }

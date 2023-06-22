@@ -11,7 +11,6 @@ struct LabelView: View {
     @Binding var index: Int
     @Binding var move: Bool
     var background: [Color] = [ .purple, .green, .yellow]
-    var colors: [Color] = [.black, .green, .yellow]
     var label: [String] = ["Let's create", "Let's invent", "Let's enjoy"]
     
     var body: some View {
@@ -31,13 +30,11 @@ struct LabelView: View {
                     Text(label[index])
                         .font(.title)
                         .frame(width: width)
+                    
                 )
                 .onAppear {
                     withAnimation(.easeOut(duration: 1).delay(0.1).repeatForever(autoreverses: true)) {
-                        if move == true {
-                            move.toggle()
-                        }
-                        
+                        move.toggle()
                     }
                 }
         }
