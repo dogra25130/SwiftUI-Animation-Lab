@@ -1,0 +1,98 @@
+[
+  {
+    "id" : 1,
+    "name" : "Blue helmet",
+    "image" : "helmet-no6",
+    "price" : 199,
+    "description" : "The football helmet is a piece of protective equipment used mainly in gridiron football. It consists of a hard plastic shell with thick padding on the inside, a face mask made of one or more plastic-coated metal bars, and a chinstrap. Each position has a different type of face mask to balance protection and visibility, and some players add polycarbonate visors to their helmets, which are used to protect their eyes from glare and impacts. Helmets are a requirement at all levels of organized football.",
+    "color" : [
+      0.61,
+      0.8,
+      0.89
+    ]
+  },
+  {
+    "id" : 2,
+    "name" : "Yellow helmet",
+    "image" : "helmet-no2",
+    "price" : 159,
+    "description" : "The football helmet is a piece of protective equipment used mainly in gridiron football. It consists of a hard plastic shell with thick padding on the inside, a face mask made of one or more plastic-coated metal bars, and a chinstrap. Each position has a different type of face mask to balance protection and visibility, and some players add polycarbonate visors to their helmets, which are used to protect their eyes from glare and impacts. Helmets are a requirement at all levels of organized football.",
+    "color" : [
+      0.97,
+      0.87,
+      0.49
+    ]
+  },
+  {
+    "id" : 3,
+    "name" : "Green helmet",
+    "image" : "helmet-no3",
+    "price" : 189,
+    "description" : "The football helmet is a piece of protective equipment used mainly in gridiron football. It consists of a hard plastic shell with thick padding on the inside, a face mask made of one or more plastic-coated metal bars, and a chinstrap. Each position has a different type of face mask to balance protection and visibility, and some players add polycarbonate visors to their helmets, which are used to protect their eyes from glare and impacts. Helmets are a requirement at all levels of organized football.",
+    "color" : [
+      0.53,
+      0.82,
+      0.63
+    ]
+  },
+  {
+    "id" : 4,
+    "name" : "Red helmet",
+    "image" : "helmet-no7",
+    "price" : 89,
+    "description" : "The football helmet is a piece of protective equipment used mainly in gridiron football. It consists of a hard plastic shell with thick padding on the inside, a face mask made of one or more plastic-coated metal bars, and a chinstrap. Each position has a different type of face mask to balance protection and visibility, and some players add polycarbonate visors to their helmets, which are used to protect their eyes from glare and impacts. Helmets are a requirement at all levels of organized football.",
+    "color" : [
+      1,
+      0.56,
+      0.63
+    ]
+  },
+  {
+    "id" : 5,
+    "name" : "Gold helmet",
+    "image" : "helmet-no8",
+    "price" : 364,
+    "description" : "The football helmet is a piece of protective equipment used mainly in gridiron football. It consists of a hard plastic shell with thick padding on the inside, a face mask made of one or more plastic-coated metal bars, and a chinstrap. Each position has a different type of face mask to balance protection and visibility, and some players add polycarbonate visors to their helmets, which are used to protect their eyes from glare and impacts. Helmets are a requirement at all levels of organized football.",
+    "color" : [
+      0.74,
+      0.65,
+      0.5
+    ]
+  },
+  {
+    "id" : 7,
+    "name" : "Purple helmet",
+    "image" : "helmet-no1",
+    "price" : 234,
+    "description" : "The football helmet is a piece of protective equipment used mainly in gridiron football. It consists of a hard plastic shell with thick padding on the inside, a face mask made of one or more plastic-coated metal bars, and a chinstrap. Each position has a different type of face mask to balance protection and visibility, and some players add polycarbonate visors to their helmets, which are used to protect their eyes from glare and impacts. Helmets are a requirement at all levels of organized football.",
+    "color" : [
+      0.64,
+      0.51,
+      0.67
+    ]
+  },
+  {
+    "id" : 6,
+    "name" : "Black helmet",
+    "image" : "helmet-no5",
+    "price" : 279,
+    "description" : "The football helmet is a piece of protective equipment used mainly in gridiron football. It consists of a hard plastic shell with thick padding on the inside, a face mask made of one or more plastic-coated metal bars, and a chinstrap. Each position has a different type of face mask to balance protection and visibility, and some players add polycarbonate visors to their helmets, which are used to protect their eyes from glare and impacts. Helmets are a requirement at all levels of organized football.",
+    "color" : [
+      0.75,
+      0.75,
+      0.8
+    ]
+  },
+  {
+    "id" : 8,
+    "name" : "White helmet",
+    "image" : "helmet-no4",
+    "price" : 314,
+    "description" : "The football helmet is a piece of protective equipment used mainly in gridiron football. It consists of a hard plastic shell with thick padding on the inside, a face mask made of one or more plastic-coated metal bars, and a chinstrap. Each position has a different type of face mask to balance protection and visibility, and some players add polycarbonate visors to their helmets, which are used to protect their eyes from glare and impacts. Helmets are a requirement at all levels of organized football.",
+    "color" : [
+      0.35,
+      0.35,
+      0.4
+    ]
+  }
+]

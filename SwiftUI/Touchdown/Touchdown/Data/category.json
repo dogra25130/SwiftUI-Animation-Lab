@@ -1,0 +1,82 @@
+[
+  {
+    "id" : 1,
+    "name" : "Helmet",
+    "image" : "icon-helmet"
+  },
+  {
+    "id" : 2,
+    "name" : "Jersey",
+    "image" : "icon-jersey"
+  },
+  {
+    "id" : 3,
+    "name" : "Gloves",
+    "image" : "icon-gloves"
+  },
+  {
+    "id" : 4,
+    "name" : "Shoes",
+    "image" : "icon-shoes"
+  },
+  {
+    "id" : 5,
+    "name" : "Shoulder Pads",
+    "image" : "icon-shoulder-pads"
+  },
+  {
+    "id" : 6,
+    "name" : "Pad Girdle",
+    "image" : "icon-integrated-pad-girdle"
+  },
+  {
+    "id" : 7,
+    "name" : "Football",
+    "image" : "icon-football"
+  },
+  {
+    "id" : 8,
+    "name" : "Outerwear",
+    "image" : "icon-outerwear"
+  },
+  {
+    "id" : 9,
+    "name" : "Ticket",
+    "image" : "icon-ticket"
+  },
+  {
+    "id" : 10,
+    "name" : "Trophy",
+    "image" : "icon-trophy"
+  },
+  {
+    "id" : 11,
+    "name" : "Energy Drink",
+    "image" : "icon-energy-drink"
+  },
+  {
+    "id" : 12,
+    "name" : "PPE  Facemask",
+    "image" : "icon-ppe-facemask"
+  },
+  {
+    "id" : 13,
+    "name" : "Cheerleading Clothes",
+    "image" : "icon-cheerleading-clothes"
+  },
+  {
+    "id" : 14,
+    "name" : "Cheerleading Gears",
+    "image" : "icon-cheerleading-gear"
+  },
+  {
+    "id" : 15,
+    "name" : "Whistle",
+    "image" : "icon-whistle"
+  },
+  {
+    "id" : 16,
+    "name" : "Stopwatch",
+    "image" : "icon-stopwatch"
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "avocado-toast-hollandaise.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "avocado-toast-hollandaise@2x.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "avocado-toast-hollandaise@3x.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

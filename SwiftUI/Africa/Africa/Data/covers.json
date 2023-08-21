@@ -1,0 +1,30 @@
+[
+  {
+    "id" : 1,
+    "name" : "cover-lion"
+  },
+  {
+    "id" : 2,
+    "name" : "cover-elephant"
+  },
+  {
+    "id" : 3,
+    "name" : "cover-cheetah"
+  },
+  {
+    "id" : 4,
+    "name" : "cover-zebra"
+  },
+  {
+    "id" : 5,
+    "name" : "cover-buffalo"
+  },
+  {
+    "id" : 6,
+    "name" : "cover-giraffe"
+  },
+  {
+    "id" : 7,
+    "name" : "cover-gorilla"
+  }
+]
