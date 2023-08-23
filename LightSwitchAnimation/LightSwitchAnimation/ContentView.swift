@@ -22,7 +22,7 @@ struct ContentView: View {
             Color.black
                 .ignoresSafeArea()
             Circle()
-                .fill(Color.yellow)
+                .fill(Color.mint)
                 .scaleEffect(CGSize(width: xScale, height: yScale))
                 .offset(y: yOffset)
             VStack {
