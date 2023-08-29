@@ -14,14 +14,15 @@ struct CoverImageView: View {
     var body: some View {
         TabView {
             ForEach(coverImages) { item in
+                
                 Image(item.name)
                     .resizable()
-                .scaledToFill()
+                    .scaledToFill()
             }
         }
         .tabViewStyle(.page)
     }
-        
+    
 }
 
 struct CoverImageView_Previews: PreviewProvider {
