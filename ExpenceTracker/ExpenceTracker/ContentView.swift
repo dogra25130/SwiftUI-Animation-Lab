@@ -49,6 +49,7 @@ struct ContentView: View {
                                 ChartLabel(totalExpense.formatted(.currency(code: "INR")), type: .title, format: "$%0.2f")
                                 LineChart()
                             }
+                            .padding(.leading)
                             .background(Color.systemBackground)
                             
                         }
