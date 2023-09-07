@@ -48,6 +48,7 @@ struct ContentView: View {
                             VStack(alignment: .leading) {
                                 ChartLabel(totalExpense.formatted(.currency(code: "INR")), type: .title, format: "$%0.2f")
                                 LineChart()
+                                    .style
                             }
                             .padding(.leading)
                             .background(Color.systemBackground)
