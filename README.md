@@ -12,3 +12,6 @@ Facinating Facts
 
 https://github.com/dogra25130/Personal-Projects/assets/32197474/31ee0df6-656e-409d-8752-ca3dfcf47921
 
+Notes on Apple Watch
+
+https://github.com/dogra25130/Personal-Projects/assets/32197474/5d7a6e05-61ea-482d-a71a-1b36798aeb6b
