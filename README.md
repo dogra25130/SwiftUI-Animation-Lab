@@ -20,6 +20,6 @@ Gird Animation
 
 https://github.com/dogra25130/Personal-Projects/assets/32197474/21bf22eb-4051-4e6c-b678-1a8451e27db5
 
+Peel Animation
 
-
-
+https://github.com/dogra25130/Personal-Projects/assets/32197474/7d577898-8ba2-4060-99b0-4703823d8646
