@@ -23,3 +23,8 @@ https://github.com/dogra25130/Personal-Projects/assets/32197474/21bf22eb-4051-4e
 Peel Animation
 
 https://github.com/dogra25130/Personal-Projects/assets/32197474/7d577898-8ba2-4060-99b0-4703823d8646
+
+SideBar
+
+https://github.com/dogra25130/SwiftUI-Projects/assets/32197474/55a94741-2938-41de-9bb0-4fbad78b7ced
+
