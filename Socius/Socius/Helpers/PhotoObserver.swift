@@ -4,17 +4,32 @@
 //
 //  Created by Abhishek Dogra on 17/09/23.
 //
+import Foundation
+import Photos
 
-import SwiftUI
-
-struct PhotoObserver: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+class PhotoObserver: NSObject, ObservableObject, PHPhotoLibraryChangeObserver {
+    @Published var photos: [PHAsset] = []
+    
+    override init() {
+        super.init()
+        PHPhotoLibrary.shared().register(self)
+        fetchPhotos()
     }
-}
-
-struct PhotoObserver_Previews: PreviewProvider {
-    static var previews: some View {
-        PhotoObserver()
+    
+    deinit {
+        PHPhotoLibrary.shared().unregisterChangeObserver(self)
+    }
+    
+    func fetchPhotos() {
+        let fetchOptions = PHFetchOptions()
+        fetchOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false)]
+        let result = PHAsset.fetchAssets(with: .image, options: fetchOptions)
+        DispatchQueue.main.async {
+            self.photos = result.objects(at: IndexSet(0..<result.count))
+        }
+    }
+    
+    func photoLibraryDidChange(_ changeInstance: PHChange) {
+        fetchPhotos()
     }
 }
