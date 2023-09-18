@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Home: View {
+struct CommunityView: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(alignment: .leading, spacing: 15) {
@@ -26,8 +26,8 @@ struct Home: View {
     }
 }
 
-struct Home_Previews: PreviewProvider {
+struct CommunityView_Previews: PreviewProvider {
     static var previews: some View {
-        Home()
+        CommunityView()
     }
 }

@@ -4,17 +4,24 @@
 //
 //  Created by Abhishek Dogra on 17/09/23.
 //
-
+import Foundation
 import SwiftUI
 
-struct OrientationObserver: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+class OrientationObserver: ObservableObject {
+    @Published var deviceOrientation = UIDevice.current.orientation
+
+    init() {
+        UIDevice.current.beginGeneratingDeviceOrientationNotifications()
+        NotificationCenter.default.addObserver(self, selector: #selector(orientationDidChange), name: UIDevice.orientationDidChangeNotification, object: nil)
+    }
+
+    deinit {
+        UIDevice.current.endGeneratingDeviceOrientationNotifications()
+        NotificationCenter.default.removeObserver(self)
+    }
+
+    @objc private func orientationDidChange() {
+        deviceOrientation = UIDevice.current.orientation
     }
 }
 
-struct OrientationObserver_Previews: PreviewProvider {
-    static var previews: some View {
-        OrientationObserver()
-    }
-}
