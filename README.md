@@ -28,3 +28,6 @@ SideBar
 
 https://github.com/dogra25130/SwiftUI-Projects/assets/32197474/55a94741-2938-41de-9bb0-4fbad78b7ced
 
+Staggered Grid View
+
+https://github.com/dogra25130/SwiftUI-Projects/assets/32197474/5d64090c-b1e6-4f88-9c5a-b1e306294e6c
