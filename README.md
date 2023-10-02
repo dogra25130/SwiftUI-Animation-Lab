@@ -34,7 +34,8 @@ https://github.com/dogra25130/SwiftUI-Projects/assets/32197474/5d64090c-b1e6-4f8
 
 Tabbar
 
-
 https://github.com/dogra25130/SwiftUI-Projects/assets/32197474/9f9e6cd8-7362-4f1d-86eb-93d3d71ee08e
 
+Custom Carousel
 
+https://github.com/dogra25130/SwiftUI-Projects/assets/32197474/08a32aaa-f1e2-4aeb-9ccc-d3933a831dd4
