@@ -39,3 +39,9 @@ https://github.com/dogra25130/SwiftUI-Projects/assets/32197474/9f9e6cd8-7362-4f1
 Custom Carousel
 
 https://github.com/dogra25130/SwiftUI-Projects/assets/32197474/08a32aaa-f1e2-4aeb-9ccc-d3933a831dd4
+
+Boomerang cards
+
+https://github.com/dogra25130/SwiftUI-Projects/assets/32197474/787f7f00-065b-4ac8-a1f1-cfad377b3716
+
+
