@@ -48,3 +48,9 @@ Double sided gallery
 
 https://github.com/dogra25130/SwiftUI-Projects/assets/32197474/e6b6d3c0-8821-4f8c-980b-faca0d982342
 
+Wheel carousel cards
+
+https://github.com/dogra25130/SwiftUI-Projects/assets/32197474/1e1a634a-dc25-43f2-8e93-12a907ceeb4c
+
+
+
