@@ -31,7 +31,7 @@ struct Home: View {
     }
     
     func setupCards() {
-        for index in 0...4 {
+        for index in 0...10 {
             cards.append(.init(cardView: cardModel[index]))
         }
         
