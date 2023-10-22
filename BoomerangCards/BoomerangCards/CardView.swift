@@ -76,9 +76,19 @@ struct CardModel {
 }
 
 let cardModel: [CardModel] = [
-    CardModel(name: "Alice Johnson", expirationDate: "03/24", lastDigits: "3857", gradient: [Color.red, Color.orange], companyName: "StarCard"),
     CardModel(name: "Michael Smith", expirationDate: "11/27", lastDigits: "9214", gradient: [Color.blue, Color.green], companyName: "QuantumPay"),
     CardModel(name: "Emily Davis", expirationDate: "08/22", lastDigits: "6732", gradient: [Color.purple, Color.pink], companyName: "LunaCard"),
     CardModel(name: "David Wilson", expirationDate: "06/19", lastDigits: "5489", gradient: [Color.yellow, Color.green], companyName: "NovaBank"),
-    CardModel(name: "Sophia Brown", expirationDate: "12/23", lastDigits: "1763", gradient: [Color.orange, Color.red], companyName: "AuroraPay")
+    CardModel(name: "Sophia Brown", expirationDate: "12/23", lastDigits: "1763", gradient: [Color.orange, Color.red], companyName: "AuroraPay"),
+    CardModel(name: "Olivia Lee", expirationDate: "09/25", lastDigits: "7921", gradient: [Color.green, Color.yellow], companyName: "OrbitCard"),
+    CardModel(name: "James Taylor", expirationDate: "04/28", lastDigits: "4567", gradient: [Color.pink, Color.purple], companyName: "SkyBank"),
+    CardModel(name: "Emma Harris", expirationDate: "07/21", lastDigits: "2310", gradient: [Color.blue, Color.red], companyName: "SolarPay"),
+    CardModel(name: "Benjamin Clark", expirationDate: "02/26", lastDigits: "9876", gradient: [Color.orange, Color.yellow], companyName: "GalaxyCard"),
+    CardModel(name: "Ava Martinez", expirationDate: "05/29", lastDigits: "5432", gradient: [Color.green, Color.purple], companyName: "StarPay"),
+    CardModel(name: "William Anderson", expirationDate: "10/20", lastDigits: "1234", gradient: [Color.pink, Color.orange], companyName: "UniverseCard"),
+    CardModel(name: "Mia White", expirationDate: "01/30", lastDigits: "8901", gradient: [Color.red, Color.blue], companyName: "CosmoBank"),
+    CardModel(name: "Ethan Walker", expirationDate: "08/27", lastDigits: "5678", gradient: [Color.yellow, Color.purple], companyName: "SolarCard"),
+    CardModel(name: "Isabella Turner", expirationDate: "11/22", lastDigits: "4321", gradient: [Color.blue, Color.green], companyName: "OrbitPay"),
+    CardModel(name: "Liam King", expirationDate: "06/26", lastDigits: "6543", gradient: [Color.orange, Color.red], companyName: "GalaxyPay")
 ]
+
