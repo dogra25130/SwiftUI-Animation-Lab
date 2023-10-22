@@ -44,4 +44,7 @@ Boomerang cards
 
 https://github.com/dogra25130/SwiftUI-Projects/assets/32197474/787f7f00-065b-4ac8-a1f1-cfad377b3716
 
+Double sided gallery
+
+https://github.com/dogra25130/SwiftUI-Projects/assets/32197474/e6b6d3c0-8821-4f8c-980b-faca0d982342
 
