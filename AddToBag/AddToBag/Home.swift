@@ -47,6 +47,7 @@ struct Home: View {
                     }
                     Spacer()
                     Text("Buy Plants")
+                    
                         .font(.title)
                         .bold()
                     Spacer()
