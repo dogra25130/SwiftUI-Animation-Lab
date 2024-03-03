@@ -52,5 +52,8 @@ Wheel carousel cards
 
 https://github.com/dogra25130/SwiftUI-Projects/assets/32197474/1e1a634a-dc25-43f2-8e93-12a907ceeb4c
 
+Add to Bag
+
+https://github.com/dogra25130/SwiftUI-Projects/assets/32197474/4eeea299-cae5-41ec-8f45-e489f520ecb6
 
 
