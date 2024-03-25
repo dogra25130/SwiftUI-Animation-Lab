@@ -59,3 +59,7 @@ https://github.com/dogra25130/SwiftUI-Projects/assets/32197474/4eeea299-cae5-41e
 Food cart (App store replica)
 
 https://github.com/dogra25130/SwiftUI-Projects/assets/32197474/6156b7b5-7a23-4624-9ed0-1b9dea47ad92
+
+Strechy header
+
+https://github.com/dogra25130/SwiftUI-Projects/assets/32197474/14bc2a8f-7c2f-4c94-842f-1ab49f8e9892
