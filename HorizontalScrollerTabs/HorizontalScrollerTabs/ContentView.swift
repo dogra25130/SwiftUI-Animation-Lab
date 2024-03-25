@@ -13,20 +13,37 @@ struct ContentView: View {
     var body: some View {
         GeometryReader { proxy in
             let rect = proxy.frame(in: .global)
-            ScrollableTabBar(tabs: tabs, rect: rect, offset: $offset) {
-                HStack(spacing: 0) {
-                    Color.red
-                    Color.blue
+            VStack {
+                TabBar(offset: $offset)
+                ScrollableTabBar(tabs: tabs, rect: rect, offset: $offset) {
+                    HStack(spacing: 0) {
+                        ScrollView {
+                            VStack {
+                                Text("A")
+                                    .frame(width: 500, height: 500)
+                                Text("A").frame(width: 500, height: 500)
+                                Text("A").frame(width: 500, height: 500)
+                                Text("A").frame(width: 500, height: 500)
+                                Text("A").frame(width: 500, height: 500)
+                                Text("A").frame(width: 500, height: 500)
+                            }
+                        }.frame(width: proxy.size.width, height: proxy.size.height)
+                        ScrollView {
+                            VStack {
+                                Text("B").frame(width: 500, height: 500)
+                                Text("B").frame(width: 500, height: 500)
+                                Text("B").frame(width: 500, height: 500)
+                                Text("B").frame(width: 500, height: 500)
+                                Text("B").frame(width: 500, height: 500)
+                            }
+                        }.frame(width: proxy.size.width, height: proxy.size.height)
+                    }
+                    .ignoresSafeArea()
                 }
-                .ignoresSafeArea()
             }
         }
-        .ignoresSafeArea()
-        .overlay (
-            TabBar(offset: $offset),
-            alignment: .top
-                
-        )
+        
+        
     }
 }
 

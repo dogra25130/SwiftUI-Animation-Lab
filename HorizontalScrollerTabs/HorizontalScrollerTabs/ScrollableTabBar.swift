@@ -34,6 +34,7 @@ struct ScrollableTabBar<Content: View>: UIViewRepresentable {
             uiView.delegate = nil
             UIView.animate(withDuration: 0.4) {
                 uiView.contentOffset.x = offset
+                uiView.contentOffset.y = offset
             } completion: { (status) in
                 if status {
                     uiView.delegate = context.coordinator
