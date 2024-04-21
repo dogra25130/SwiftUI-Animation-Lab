@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "06F2137D-285A-4035-8CCA-143742E2BFB4"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F57328EF-96CD-4D99-B908-9E1217712504"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestSwiftUI/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "F57328EF-96CD-4D99-B908-9E1217712504 - e923da1ef2207411"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;TestSwiftUI.ViewModelData&gt;, TestSwiftUI.ViewModelData, SwiftUI.Text&gt; in TestSwiftUI.ContentView.body.getter : some"
+                  moduleName = "TestSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhishekdogra/Desktop/Personal-Projects/TestSwiftUI/TestSwiftUI/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "107">
+               </Location>
+               <Location
+                  uuid = "F57328EF-96CD-4D99-B908-9E1217712504 - 9db226905524fbfc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (TestSwiftUI.ViewModelData) -&gt; SwiftUI.Text in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;TestSwiftUI.ViewModelData&gt;, TestSwiftUI.ViewModelData, SwiftUI.Text&gt; in TestSwiftUI.ContentView.body.getter : some"
+                  moduleName = "TestSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhishekdogra/Desktop/Personal-Projects/TestSwiftUI/TestSwiftUI/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "F57328EF-96CD-4D99-B908-9E1217712504 - e923da1ef2207411"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;TestSwiftUI.ViewModelData&gt;, TestSwiftUI.ViewModelData, SwiftUI.Text&gt; in TestSwiftUI.ContentView.body.getter : some"
+                  moduleName = "TestSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhishekdogra/Desktop/Personal-Projects/TestSwiftUI/TestSwiftUI/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "163">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
