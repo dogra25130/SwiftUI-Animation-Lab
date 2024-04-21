@@ -63,3 +63,7 @@ https://github.com/dogra25130/SwiftUI-Projects/assets/32197474/6156b7b5-7a23-462
 Strechy header
 
 https://github.com/dogra25130/SwiftUI-Projects/assets/32197474/14bc2a8f-7c2f-4c94-842f-1ab49f8e9892
+
+Flip Animation
+
+https://github.com/dogra25130/SwiftUI-Projects/assets/32197474/0ca0108a-5d0d-4a0b-b0ba-b564b282137b
