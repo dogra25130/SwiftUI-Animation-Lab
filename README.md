@@ -67,3 +67,8 @@ https://github.com/dogra25130/SwiftUI-Projects/assets/32197474/14bc2a8f-7c2f-4c9
 Flip Animation
 
 https://github.com/dogra25130/SwiftUI-Projects/assets/32197474/0ca0108a-5d0d-4a0b-b0ba-b564b282137b
+
+Full Screen Animation
+
+https://github.com/dogra25130/SwiftUI-Projects/assets/32197474/2d779a49-8318-4be1-b384-d7dd6f994638
+
