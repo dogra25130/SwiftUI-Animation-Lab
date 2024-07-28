@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "EC0B3E58-4D9F-476B-A860-88E3B519BC39"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "593921EF-878B-4B0D-B5A6-45C75A23001D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TrendScout/Modules/Auth/OTP/OTPViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "verifyOTP()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "593921EF-878B-4B0D-B5A6-45C75A23001D - 726e189d2b4ff22c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TrendScout.OTPViewModel.verifyOTP() -&gt; ()"
+                  moduleName = "TrendScout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhishek.dogragrofers.com/Documents/Projects/e-commerce-ios%20copy%204/TrendScout/TrendScout/Modules/Auth/OTP/OTPViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "593921EF-878B-4B0D-B5A6-45C75A23001D - 9938cb039b602b42"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable () async throws -&gt; () in TrendScout.OTPViewModel.verifyOTP() -&gt; ()"
+                  moduleName = "TrendScout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhishek.dogragrofers.com/Documents/Projects/e-commerce-ios%20copy%204/TrendScout/TrendScout/Modules/Auth/OTP/OTPViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "593921EF-878B-4B0D-B5A6-45C75A23001D - 39223452a6332bf0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in TrendScout.OTPViewModel.verifyOTP() -&gt; ()"
+                  moduleName = "TrendScout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhishek.dogragrofers.com/Documents/Projects/e-commerce-ios%20copy%204/TrendScout/TrendScout/Modules/Auth/OTP/OTPViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "593921EF-878B-4B0D-B5A6-45C75A23001D - 598fa14aacc0455f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TrendScout.OTPViewModel.verifyOTP() -&gt; ()"
+                  moduleName = "TrendScout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhishek.dogragrofers.com/Documents/Projects/TrendScout/TrendScout/TrendScout/Modules/Auth/OTP/OTPViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "593921EF-878B-4B0D-B5A6-45C75A23001D - b2d972d41cef9c31"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable () async throws -&gt; () in TrendScout.OTPViewModel.verifyOTP() -&gt; ()"
+                  moduleName = "TrendScout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhishek.dogragrofers.com/Documents/Projects/TrendScout/TrendScout/TrendScout/Modules/Auth/OTP/OTPViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "593921EF-878B-4B0D-B5A6-45C75A23001D - 12c38d8521bc9c83"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in TrendScout.OTPViewModel.verifyOTP() -&gt; ()"
+                  moduleName = "TrendScout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhishek.dogragrofers.com/Documents/Projects/TrendScout/TrendScout/TrendScout/Modules/Auth/OTP/OTPViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "593921EF-878B-4B0D-B5A6-45C75A23001D - 598fa14aacc0455f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TrendScout.OTPViewModel.verifyOTP() -&gt; ()"
+                  moduleName = "TrendScout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhishek.dogragrofers.com/Documents/Projects/TrendScout/TrendScout/TrendScout/Modules/Auth/OTP/OTPViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "140">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
