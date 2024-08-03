@@ -15,20 +15,21 @@ struct CardDetail: Identifiable {
     let price: String
     var aspectRatio: CGFloat = 1
     let ratings: CGFloat
+    var backgroundColors: [Color] = []
 }
 
 struct BaseDataModel: Equatable, Identifiable {
     static func == (lhs: BaseDataModel, rhs: BaseDataModel) -> Bool {lhs.id == rhs.id }
     
     let id: String = UUID().uuidString
-    let tabTitle: String
+    var tabTitle: String
     let cardsDetails: [CardDetail] = [
         CardDetail(
             title: "Global Solutions",
             imageURL: "1",
             finalPrice: "$759.00",
             price: "$730.00",
-            aspectRatio: 1.5,
+            aspectRatio: 0.66,
             ratings: 4.8
         ),
         CardDetail(
@@ -36,7 +37,7 @@ struct BaseDataModel: Equatable, Identifiable {
             imageURL: "4",
             finalPrice: "$899.99",
             price: "$850.50",
-            aspectRatio: 1.25,
+            aspectRatio: 0.8,
             ratings: 4.7
         ),
         CardDetail(
@@ -70,7 +71,8 @@ struct BaseDataModel: Equatable, Identifiable {
             price: "$740.00",
             aspectRatio: 1.0,
             ratings: 4.4
-        ),
+        )
+        ,
         CardDetail(
             title: "Elite Services",
             imageURL: "5",
@@ -84,7 +86,7 @@ struct BaseDataModel: Equatable, Identifiable {
             imageURL: "1",
             finalPrice: "$890.00",
             price: "$850.00",
-            aspectRatio: 1.5,
+            aspectRatio: 0.66,
             ratings: 4.6
         ),
         CardDetail(
@@ -92,7 +94,7 @@ struct BaseDataModel: Equatable, Identifiable {
             imageURL: "4",
             finalPrice: "$720.00",
             price: "$690.00",
-            aspectRatio: 1.25,
+            aspectRatio: 0.8,
             ratings: 4.7
         ),
         CardDetail(
@@ -116,7 +118,7 @@ struct BaseDataModel: Equatable, Identifiable {
             imageURL: "6",
             finalPrice: "$980.00",
             price: "$950.00",
-            aspectRatio: 0.75,
+            aspectRatio: 1.33,
             ratings: 4.5
         )
     ]

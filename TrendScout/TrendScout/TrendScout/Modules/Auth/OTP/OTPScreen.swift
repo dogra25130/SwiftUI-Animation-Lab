@@ -59,7 +59,6 @@ struct OTPScreen: View {
                 }
             }
         }
-        .preferredColorScheme(.dark)
         .navigationBarBackButtonHidden(true)
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {

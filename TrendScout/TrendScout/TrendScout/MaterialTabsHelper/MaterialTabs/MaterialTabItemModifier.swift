@@ -40,6 +40,16 @@ public extension View {
                                     config: config,
                                     deselectedConfig: deselectedConfig
                                 )
+                            case .custom(let title, let icon, let config, let deselectedConfig):
+                                CustomTab(
+                                    tab: tab,
+                                    context: context,
+                                    tapped: tapped,
+                                    title: title,
+                                    icon: icon.map { AnyView($0) },
+                                    config: config,
+                                    deselectedConfig: deselectedConfig
+                                )
                             }
                         }
                     )

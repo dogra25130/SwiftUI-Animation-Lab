@@ -31,6 +31,7 @@ struct TrendScout: App {
                 }
             }
             .environmentObject(appRootManager)
+            .preferredColorScheme(.light)
         }
     }
 }

@@ -8,16 +8,14 @@
 import SwiftUI
 struct ProductCardViewV1: View {
     let data: CardDetail
-    var width: CGFloat = 200
-    var height: CGFloat = 200
-
+    var aspectRatio: CGFloat = 2.0
     var body: some View {
         VStack(alignment: .leading) {
             ZStack {
                 Image(data.imageURL)
                     .resizable()
                     .clipShape(RoundedRectangle(cornerRadius: .p24))
-                    .frame(width: width, height: height)
+                    .aspectRatio(aspectRatio, contentMode: .fill)
                 VStack {
                     RatingsView(ratings: data.ratings)
                     Spacer()
@@ -61,10 +59,7 @@ struct RatingsView: View {
             
             Image(systemName: isSelected ? "heart.fill" : "heart")
                 .shadow(color: isSelected ? Color.white : Color.clear, radius: 2)
-                .symbolEffect(
-                    .bounce,
-                                value: isSelected
-                            )
+                .symbolEffect(.bounce, value: isSelected)
                 .foregroundStyle(isSelected ? Color.pink : Color.white)
                 .onTapGesture {
                     withAnimation {
@@ -100,16 +95,11 @@ struct ProductInfoView: View {
             }
             .foregroundStyle(Utils.textTheme)
             .padding()
-            .background(
-                LinearGradient(colors: [Color.white.opacity(0.5),
-                                        Utils.themeSecondaryGradientColor2],
-                               startPoint: .top, endPoint: .bottom)
-                .blur(radius: .p10)
-                )
             
         }
     }
 }
+
 #Preview(body: {
     HomeScreen()
 })
