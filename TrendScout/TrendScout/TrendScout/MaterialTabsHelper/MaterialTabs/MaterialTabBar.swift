@@ -32,6 +32,13 @@ public struct MaterialTabBar<Tab>: View where Tab: Hashable {
             config: SecondaryTab<Tab>.Config = .init(),
             deselectedConfig: SecondaryTab<Tab>.Config? = nil
         )
+        
+        case custom(
+            Binding<String>,
+            icon: (any View)? = nil,
+            config: CustomTab<Tab>.Config = .init(),
+            deselectedConfig: CustomTab<Tab>.Config? = nil
+        )
     }
 
     /// Options for tab selector width sizing. If space permits, tabs selectors will fill the entire width of the tab bar. Otherwise, the tab bar will scroll horizontally.

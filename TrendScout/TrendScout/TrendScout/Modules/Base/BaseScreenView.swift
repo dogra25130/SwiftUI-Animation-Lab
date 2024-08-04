@@ -12,100 +12,98 @@ struct BaseScreenView: View {
     @Binding var sideTab: MenuOptions
     @Binding var showSideMenu: Bool
     @State private var selectedTab: Int = 0
-    @State private var screenWidth = 0.0
+    @State private var safeAreaPaddingFactor = 0.0
     @Namespace private  var namespace
+    @State private var isPresented = false
+    @State private var scrollOffset: CGFloat = .zero
     var body: some View {
-        MaterialTabs(
-            isHeaderStrechy: false,
-            selectedTab: $selectedTab,
-            headerTitle: { context in
-                TopInfoBar()
-                    .padding(.top, Utils.getSafeAreaTop())
-            },
-            headerTabBar: { context in
-                MaterialTabBar(selectedTab: $selectedTab, sizing: .equalWidth, context: context)
-            },
-            headerBackground: { context in
-                Utils.textTheme
-            },
-            content: {
-                ForEach(0..<viewModel.baseModel.count, id: \.self) { index in
-                    MaterialTabsScroll(tab: index) { _ in
-                        VerticalContent(for: viewModel.baseModel[index])
-                            .padding(.top)
-                    }
-                    .materialTabItem(
-                        tab: index,
-                        label: { tab, context, tapped in
-                            ZStack {
-                                if tab == context.selectedTab {
-                                    RoundedRectangle(cornerRadius: 10)
-                                        .fill(Color.red.opacity(0.5))
-                                        .offset(y: .p28)
-                                        .matchedGeometryEffect(id: "ID", in: namespace)
-  
-                                    
-                                }
-                                Text(viewModel.baseModel[safe: index]?.tabTitle ?? "")
-                                    .font(.setFont(tab == context.selectedTab ? .bold700 : .medium500, .p16))
-                                    .foregroundStyle(Color.black)
-                                    .padding(.horizontal, .p6)
-                                    .padding(.p2)
-                            }
-                            .id(index)
-                            .padding(.bottom, .p6)
-                            .frame(maxWidth: .infinity)
-                            .onTapGesture(perform: tapped)
-                            .padding(.top, Utils.getSafeAreaTop())
-                        }
-                    )
+        NavigationStack {
+            MaterialTabs(
+                isHeaderStrechy: false,
+                selectedTab: $selectedTab,
+                headerTitle: { context in
+                    TopInfoBar()
+                },
+                headerTabBar: { context in
+                    MaterialTabBar(selectedTab: $selectedTab, sizing: .equalWidth, context: context)
+                        .blur(radius: showSideMenu ? .p10 : .zero)
+                },
+                headerBackground: { context in
+                    Utils.topbarBackgroundTheme
+                },
+                content: {
+                    ContentView
                 }
+            )
+            .onAppear {
+                viewModel.fetchData(for: sideTab)
             }
-        )
-        .onAppear {
-            viewModel.fetchData(for: sideTab)
-        }
-        .onChange(of: sideTab) {
-            viewModel.fetchData(for: sideTab)
+            .onChange(of: sideTab) {
+                viewModel.fetchData(for: sideTab)
+            }
+            .sheet(isPresented: $isPresented) {
+                SwipeableCardsView()
+            }
+            .onChange(of: scrollOffset) { _, val in
+                safeAreaPaddingFactor = val
+            }
         }
     }
 }
 
 extension BaseScreenView {
-    
-    
-    @ViewBuilder
-    private func VerticalContent(for model: BaseDataModel) -> some View {
-        VStack(alignment: .leading) {
-            GeometryReader { proxy in
-                HStack {
-                    Text("Trending for \(model.tabTitle)")
-                        .font(.setFont(.semiBold600, .p28))
-                        .foregroundStyle(Utils.textTheme)
-                    
-                    Spacer()
-                }
-                .frame(height: proxy.size.height)
-                .frame(maxWidth: .infinity)
-                .onAppear {
-                    screenWidth = proxy.size.width / 2 - .p24
+    func headerTabBar(_ context:  HeaderContext<Int>) -> some View {
+        MaterialTabBar(selectedTab: $selectedTab, sizing: .equalWidth, context: context)
+    }
+}
+extension BaseScreenView {
+    var ContentView: some View {
+        
+        ForEach(0..<viewModel.baseModel.count, id: \.self) { index in
+            let model = viewModel.baseModel[index]
+            MaterialTabsScroll(tab: index, scrollOffset: $scrollOffset) { _ in
+                LazyVStack {
+                    VerticalContent(for: model, showHeader: true)
+                        .padding(.top)
                 }
             }
+            .materialTabItem(tab: index, label: .primary(model.tabTitle,
+                                                         icon: nil,
+                                                         config: .init(titleStyle: Utils.textTheme,
+                                                                       underlineStyle: Color.red.opacity(0.5),
+                                                                       bottomRuleThickness: .zero,
+                                                                       padding: EdgeInsets(top: .zero, leading: .p16, bottom: .zero, trailing: .zero)),
+                                                         deselectedConfig: nil))
+        }
+    }
+}
+
+
+extension BaseScreenView {
+    @ViewBuilder
+    private func VerticalContent(for model: BaseDataModel, showHeader: Bool) -> some View {
+        LazyVStack(alignment: .leading) {
+            HStack {
+                Text("Trending for \(model.tabTitle)")
+                    .font(.setFont(.semiBold600, .p28))
+                    .foregroundStyle(Utils.textTheme)
+                    .opacity(showHeader ? 1.0 : 0.0)
+                Spacer()
+            }
+            .frame(maxWidth: .infinity)
             .padding(.top)
             
             HStack(alignment: .top, spacing: .p12) {
                 LazyVStack(spacing: 8) {
                     ForEach(model.splitArray.first ?? []) { detail in
                         ProductCardViewV1(data: detail,
-                                          width: screenWidth,
-                                          height: screenWidth * detail.aspectRatio)
+                                          aspectRatio: detail.aspectRatio)
                     }
                 }
                 LazyVStack(spacing: 8) {
                     ForEach(model.splitArray.last ?? []) { detail in
                         ProductCardViewV1(data: detail,
-                                          width: screenWidth,
-                                          height: screenWidth * detail.aspectRatio)
+                                          aspectRatio: detail.aspectRatio)
                     }
                 }
             }
@@ -120,7 +118,7 @@ extension BaseScreenView {
 }
 
 extension BaseScreenView {
-    @ViewBuilder
+    
     func TopInfoBar() -> some View {
         VStack(spacing: .p32) {
             HStack(alignment: .center, spacing: .p16) {
@@ -130,20 +128,22 @@ extension BaseScreenView {
                 Spacer()
                 SearchView()
             }
-            
+            .foregroundStyle(Utils.textTheme)
             RoundedRectangle(cornerRadius: .p24)
                 .frame(height: 200)
                 .frame(maxWidth: .infinity)
                 .foregroundStyle(RadialGradient(colors: [Utils.themePrimaryGradientColor2,
                                                          Utils.themePrimaryGradientColor1],
                                                 center: .center, startRadius: .zero, endRadius: 200))
-                                 
+                .onTapGesture {
+                    isPresented.toggle()
+                }
                 .overlay {
                     HStack(spacing: .zero) {
                         VStack(alignment: .leading, spacing: .p8) {
                             Text("Latest \ngadgets")
                                 .font(.setFont(.medium500, .p20))
-                                .foregroundStyle(Utils.textTheme)
+                                .foregroundStyle(Utils.textThemeSecondary)
                             HStack(spacing: .p2) {
                                 Image(systemName: "star.fill")
                                     .resizable()
@@ -169,10 +169,10 @@ extension BaseScreenView {
                             Spacer()
                             Text("Shop")
                                 .padding(.p6)
-                                .foregroundStyle(Utils.textTheme)
+                                .foregroundStyle(Utils.textThemeSecondary)
                                 .background(
                                     RoundedRectangle(cornerRadius: .p10)
-                                        .stroke(Utils.textTheme)
+                                        .stroke(Utils.textThemeSecondary)
                                 )
                                 .bold()
                         }
@@ -187,12 +187,19 @@ extension BaseScreenView {
                     }
                     .padding()
                 }
+            
+            
+            
         }
         .padding(.horizontal)
         .padding(.top)
+        .offset(y: getTopSpacing())
     }
     
-    @ViewBuilder
+    private func getTopSpacing() -> CGFloat {
+        return safeAreaPaddingFactor >= 0 ? 0 : safeAreaPaddingFactor / 3
+    }
+    
     private func OptionsView() -> some View {
         Button {
             showSideMenu.toggle()
@@ -201,11 +208,11 @@ extension BaseScreenView {
                   "xmark" : "line.3.horizontal")
             .resizable()
             .frame(width: .p16, height: .p16)
-            .foregroundStyle(.black)
+            .foregroundStyle(Utils.textTheme)
         }
     }
     
-    @ViewBuilder
+    
     private func AddressView() -> some View {
         VStack {
             Text("Home ")
@@ -214,7 +221,6 @@ extension BaseScreenView {
             
             Text("D-61, Block G, Sector 63")
         }
-        .foregroundStyle(.black)
         .lineLimit(1)
     }
     
@@ -226,7 +232,7 @@ extension BaseScreenView {
             Image(systemName: "magnifyingglass")
                 .resizable()
                 .frame(width: .p24, height: .p24)
-                .foregroundStyle(.black)
+                .foregroundStyle(Utils.textTheme)
         }
     }
 }

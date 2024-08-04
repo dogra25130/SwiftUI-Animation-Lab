@@ -29,10 +29,12 @@ public struct MaterialTabsScroll<Content, Tab, Item>: View where Content: View, 
     /// `scrollTargetLayout()` to your content as needed.
     public init(
         tab: Tab,
+        scrollOffset: Binding<CGFloat>,
         @ViewBuilder content: @escaping (_ context: MaterialTabsScrollContext<Tab>) -> Content
     ) where Item == ScrollItem {
         self.init(
             tab: tab,
+            scrollOffset: scrollOffset,
             reservedItem: .item,
             scrollItem: .constant(nil),
             scrollUnitPoint: .constant(.top),
@@ -59,6 +61,7 @@ public struct MaterialTabsScroll<Content, Tab, Item>: View where Content: View, 
     /// `scrollTargetLayout()` to your content as needed.
     public init(
         tab: Tab,
+        scrollOffset: Binding<CGFloat>,
         reservedItem: Item,
         scrollItem: Binding<Item?>,
         scrollUnitPoint: Binding<UnitPoint>,
@@ -66,6 +69,7 @@ public struct MaterialTabsScroll<Content, Tab, Item>: View where Content: View, 
     ) {
         self.tab = tab
         self.reservedItem = reservedItem
+        _scrollOffset = scrollOffset
         _scrollItem = scrollItem
         _scrollUnitPoint = scrollUnitPoint
         _scrollModel = StateObject(
@@ -75,12 +79,13 @@ public struct MaterialTabsScroll<Content, Tab, Item>: View where Content: View, 
             )
         )
         self.content = content
+        
     }
 
     // MARK: - Constants
 
     // MARK: - Variables
-
+    @Binding var scrollOffset: CGFloat
     private let tab: Tab
     private let reservedItem: Item?
     @State private var coordinateSpaceName = UUID()
@@ -106,6 +111,7 @@ public struct MaterialTabsScroll<Content, Tab, Item>: View where Content: View, 
                         }
                     }
                     .onPreferenceChange(ScrollOffsetPreferenceKey.self) { offset in
+                        scrollOffset = offset
                         scrollModel.contentOffsetChanged(offset)
                     }
                 ZStack(alignment: .top) {

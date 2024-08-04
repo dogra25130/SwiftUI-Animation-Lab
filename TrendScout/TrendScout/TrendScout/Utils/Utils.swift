@@ -9,7 +9,9 @@ import Foundation
 import SwiftUI
 
 class Utils {
-    static var textTheme = Color(hex: "BFC9CA")
+    static var textTheme = Color(hex: "000000")
+    static var textThemeSecondary = Color(hex: "FFFFFF")
+    static var topbarBackgroundTheme = Color(hex: "BFC9CA")
     static var themePrimaryGradientColor1 = Color(hex: "000000") // Black
     static var themePrimaryGradientColor2 = Color(hex: "4A4A4A") // Light Gray
 

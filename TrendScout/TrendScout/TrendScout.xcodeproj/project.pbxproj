@@ -21,6 +21,7 @@
 		CF06AD1C2C4C2D24003034FC /* OTPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF06AD1B2C4C2D24003034FC /* OTPModel.swift */; };
 		CF06AD222C4C357D003034FC /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF06AD212C4C357D003034FC /* Launch Screen.storyboard */; };
 		CF06AD242C4C35A2003034FC /* AppLaunchIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF06AD232C4C35A2003034FC /* AppLaunchIcon.jpg */; };
+		CF3BA9FD2C5EFCF50083FAE4 /* CustomTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3BA9FC2C5EFCF50083FAE4 /* CustomTab.swift */; };
 		CF60B1EB2C47F1BE005553EA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF60B1EA2C47F1BE005553EA /* LoginViewModel.swift */; };
 		CF6391532C500C13000FAB4A /* BaseScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6391522C500C12000FAB4A /* BaseScreenViewModel.swift */; };
 		CF6391572C501691000FAB4A /* HomeScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6391562C501691000FAB4A /* HomeScreenViewModel.swift */; };
@@ -73,6 +74,8 @@
 		CF9485822C5670310046361C /* TabBarHeightPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF94857E2C5670310046361C /* TabBarHeightPreferenceKey.swift */; };
 		CF9485832C5670310046361C /* TitleHeightPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF94857F2C5670310046361C /* TitleHeightPreferenceKey.swift */; };
 		CF9485852C5674270046361C /* BaseScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9485842C5674270046361C /* BaseScreenView.swift */; };
+		CFBEB3312C586E26004793D3 /* CardStackSwiper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBEB3302C586E26004793D3 /* CardStackSwiper.swift */; };
+		CFBEB3332C586E45004793D3 /* CardSwiperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBEB3322C586E45004793D3 /* CardSwiperView.swift */; };
 		CFCE4AD92C56182100AB62B0 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFCE4AC72C56181900AB62B0 /* Poppins-ExtraLight.ttf */; };
 		CFCE4ADA2C56182100AB62B0 /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFCE4ACF2C56181A00AB62B0 /* Poppins-ExtraBoldItalic.ttf */; };
 		CFCE4ADB2C56182100AB62B0 /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFCE4ACD2C56181900AB62B0 /* Poppins-BoldItalic.ttf */; };
@@ -129,6 +132,7 @@
 		CF06AD1B2C4C2D24003034FC /* OTPModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPModel.swift; sourceTree = "<group>"; };
 		CF06AD212C4C357D003034FC /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		CF06AD232C4C35A2003034FC /* AppLaunchIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AppLaunchIcon.jpg; sourceTree = "<group>"; };
+		CF3BA9FC2C5EFCF50083FAE4 /* CustomTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTab.swift; sourceTree = "<group>"; };
 		CF60B1EA2C47F1BE005553EA /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		CF6391522C500C12000FAB4A /* BaseScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScreenViewModel.swift; sourceTree = "<group>"; };
 		CF6391562C501691000FAB4A /* HomeScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewModel.swift; sourceTree = "<group>"; };
@@ -184,6 +188,8 @@
 		CF94857E2C5670310046361C /* TabBarHeightPreferenceKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarHeightPreferenceKey.swift; sourceTree = "<group>"; };
 		CF94857F2C5670310046361C /* TitleHeightPreferenceKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleHeightPreferenceKey.swift; sourceTree = "<group>"; };
 		CF9485842C5674270046361C /* BaseScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScreenView.swift; sourceTree = "<group>"; };
+		CFBEB3302C586E26004793D3 /* CardStackSwiper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStackSwiper.swift; sourceTree = "<group>"; };
+		CFBEB3322C586E45004793D3 /* CardSwiperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSwiperView.swift; sourceTree = "<group>"; };
 		CFCE4AC72C56181900AB62B0 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
 		CFCE4AC82C56181900AB62B0 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
 		CFCE4AC92C56181900AB62B0 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
@@ -429,6 +435,7 @@
 				CF9485412C566FDB0046361C /* MaterialTabsScroll.swift */,
 				CF9485402C566FDB0046361C /* MaterialTabsScrollContext.swift */,
 				CF9485422C566FDB0046361C /* PrimaryTab.swift */,
+				CF3BA9FC2C5EFCF50083FAE4 /* CustomTab.swift */,
 				CF94853B2C566FDA0046361C /* SecondaryTab.swift */,
 			);
 			path = MaterialTabs;
@@ -526,6 +533,8 @@
 			isa = PBXGroup;
 			children = (
 				CF9485842C5674270046361C /* BaseScreenView.swift */,
+				CFBEB3322C586E45004793D3 /* CardSwiperView.swift */,
+				CFBEB3302C586E26004793D3 /* CardStackSwiper.swift */,
 				CF6391522C500C12000FAB4A /* BaseScreenViewModel.swift */,
 			);
 			path = Base;
@@ -745,6 +754,7 @@
 				CF94854A2C566FDB0046361C /* PrimaryTab.swift in Sources */,
 				CF9485492C566FDB0046361C /* MaterialTabsScroll.swift in Sources */,
 				CF6B7D0A2C43F7A600383420 /* LottieView.swift in Sources */,
+				CFBEB3332C586E45004793D3 /* CardSwiperView.swift in Sources */,
 				CF60B1EB2C47F1BE005553EA /* LoginViewModel.swift in Sources */,
 				CF94855C2C5670020046361C /* HeaderStyleModifier.swift in Sources */,
 				CF9485532C566FF00046361C /* StickyHeaderContext.swift in Sources */,
@@ -753,7 +763,9 @@
 				CF6391592C501B09000FAB4A /* CustomSegmentedControl.swift in Sources */,
 				CF06AD182C4C2CF9003034FC /* RegisterModel.swift in Sources */,
 				CF06AD042C49F81C003034FC /* RegisterViewModel.swift in Sources */,
+				CFBEB3312C586E26004793D3 /* CardStackSwiper.swift in Sources */,
 				CF6B7D0D2C44323800383420 /* Utils.swift in Sources */,
+				CF3BA9FD2C5EFCF50083FAE4 /* CustomTab.swift in Sources */,
 				CF9485672C5670130046361C /* BinaryFloatingPoint+Extensions.swift in Sources */,
 				CF06AD102C4C1312003034FC /* OTPViewModel.swift in Sources */,
 				CF9485742C5670230046361C /* HeaderView.swift in Sources */,
