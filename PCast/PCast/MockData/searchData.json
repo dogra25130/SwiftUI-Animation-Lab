@@ -1,0 +1,29 @@
+[
+  {
+    "id": "6",
+    "title": "AI Revolution",
+    "date": "2024-08-05",
+    "duration": "55:00",
+    "authorName": "Alice Brown",
+    "image": "trending1",
+    "size": "23mb"
+  },
+  {
+    "id": "7",
+    "title": "Blockchain Basics",
+    "date": "2024-08-03",
+    "duration": "40:20",
+    "authorName": "Bob White",
+    "image": "trending2",
+    "size": "23mb"
+  },
+  {
+    "id": "8",
+    "title": "Quantum Computing",
+    "date": "2024-08-01",
+    "duration": "50:30",
+    "authorName": "Diana Black",
+    "image": "trending3",
+    "size": "23mb"
+  }
+]

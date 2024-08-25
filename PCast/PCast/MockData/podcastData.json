@@ -1,0 +1,107 @@
+{
+  "id": "podcast_001",
+  "title": "Tech Talks",
+  "authors": "John Doe, Jane Smith",
+  "image": "podcast_bg",
+  "url": "media",
+  "episodeInfo": {
+    "desc": "The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.",
+    "episodeTitle": "The Future of AI",
+    "size": "50MB"
+  },
+  "episodes": [
+    {
+      "id": "episode_001",
+      "title": "Introduction to AI",
+      "date": "2024-08-01",
+      "duration": "30:45",
+      "authorName": "John Doe",
+      "image": "https://example.com/images/ai_intro.png",
+      "size": "52mb"
+    },
+    {
+      "id": "episode_002",
+      "title": "Machine Learning Basics",
+      "date": "2024-08-08",
+      "duration": "45:30",
+      "authorName": "Jane Smith",
+      "image": "https://example.com/images/ml_basics.png",
+      "size": "55mb"
+    },
+    {
+      "id": "episode_003",
+      "title": "Neural Networks Explained",
+      "date": "2024-08-15",
+      "duration": "50:20",
+      "authorName": "John Doe",
+      "image": "https://example.com/images/neural_networks.png",
+      "size": "58mb"
+    },
+    {
+      "id": "episode_004",
+      "title": "Deep Learning Demystified",
+      "date": "2024-08-22",
+      "duration": "40:15",
+      "authorName": "Jane Smith",
+      "image": "https://example.com/images/deep_learning.png",
+      "size": "42mb"
+    },
+    {
+      "id": "episode_005",
+      "title": "AI in Healthcare",
+      "date": "2024-08-29",
+      "duration": "55:10",
+      "authorName": "John Doe",
+      "image": "https://example.com/images/ai_healthcare.png",
+      "size": "50mb"
+    },
+    {
+      "id": "episode_006",
+      "title": "AI Ethics and Bias",
+      "date": "2024-09-05",
+      "duration": "42:30",
+      "authorName": "Jane Smith",
+      "image": "https://example.com/images/ai_ethics.png",
+      "size": "56mb"
+    },
+    {
+      "id": "episode_007",
+      "title": "The Role of AI in Business",
+      "date": "2024-09-12",
+      "duration": "47:45",
+      "authorName": "John Doe",
+      "image": "https://example.com/images/ai_business.png",
+      "size": "62mb"
+    },
+    {
+      "id": "episode_008",
+      "title": "AI in Gaming",
+      "date": "2024-09-19",
+      "duration": "36:20",
+      "authorName": "Jane Smith",
+      "image": "https://example.com/images/ai_gaming.png",
+      "size": "52mb"
+    },
+    {
+      "id": "episode_009",
+      "title": "Future of AI in Education",
+      "date": "2024-09-26",
+      "duration": "52:30",
+      "authorName": "John Doe",
+      "image": "https://example.com/images/ai_education.png",
+      "size": "59mb"
+    },
+    {
+      "id": "episode_010",
+      "title": "AI in Everyday Life",
+      "date": "2024-10-03",
+      "duration": "48:15",
+      "authorName": "Jane Smith",
+      "image": "https://example.com/images/ai_everyday.png",
+      "size": "54mb"
+    }
+  ],
+  "likeCount": 27451,
+  "dislikeCount": 197,
+  "size": "52mb"
+}

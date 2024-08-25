@@ -1,0 +1,189 @@
+{
+  "id": "1",
+  "suggestionPodCastModel": [
+    {
+      "id": "1",
+      "title": "The Future of Tech",
+      "date": "2024-08-15",
+      "duration": "45:30",
+      "authorName": "John Doe",
+      "image": "hcard1",
+      "size": "52mb"
+    },
+    {
+      "id": "2",
+      "title": "Health and Wellness",
+      "date": "2024-08-12",
+      "duration": "30:15",
+      "authorName": "Jane Smith",
+      "image": "hcard2",
+      "size": "52mb"
+    },
+    {
+      "id": "3",
+      "title": "Business Insights",
+      "date": "2024-08-10",
+      "duration": "50:00",
+      "authorName": "Mark Johnson",
+      "image": "hcard3",
+      "size": "52mb"
+    }
+  ],
+  "trendingPodcastModel": {
+    "headline": "Top Trending Podcasts",
+    "podcastSectionModel": [
+      {
+        "id": "1",
+        "sectionName": "Technology",
+        "podcastModel": [
+          {
+            "id": "6",
+            "title": "AI Revolution",
+            "date": "2024-08-05",
+            "duration": "55:00",
+            "authorName": "Alice Brown",
+            "image": "trending1",
+            "size": "52mb"
+          },
+          {
+            "id": "7",
+            "title": "Blockchain Basics",
+            "date": "2024-08-03",
+            "duration": "40:20",
+            "authorName": "Bob White",
+            "image": "trending2",
+            "size": "52mb"
+          },
+          {
+            "id": "8",
+            "title": "Quantum Computing",
+            "date": "2024-08-01",
+            "duration": "50:30",
+            "authorName": "Diana Black",
+            "image": "trending3",
+            "size": "52mb"
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "sectionName": "Health",
+        "podcastModel": [
+          {
+            "id": "11",
+            "title": "Mindfulness Meditation",
+            "date": "2024-08-08",
+            "duration": "35:10",
+            "authorName": "Eve Green",
+            "image": "trending3",
+            "size": "52mb"
+          },
+          {
+            "id": "12",
+            "title": "Nutrition 101",
+            "date": "2024-08-06",
+            "duration": "25:50",
+            "authorName": "Charlie Black",
+            "image": "trending1",
+            "size": "51mb"
+          },
+          {
+            "id": "13",
+            "title": "Fitness Trends",
+            "date": "2024-08-04",
+            "duration": "30:00",
+            "authorName": "Mike White",
+            "image": "trending2",
+            "size": "55mb"
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "sectionName": "Business",
+        "podcastModel": [
+          {
+            "id": "16",
+            "title": "Startup Stories",
+            "date": "2024-08-02",
+            "duration": "48:15",
+            "authorName": "David Blue",
+            "image": "trending1",
+            "size": "59mb"
+          },
+          {
+            "id": "17",
+            "title": "Investment Strategies",
+            "date": "2024-08-01",
+            "duration": "60:00",
+            "authorName": "Fiona Grey",
+            "image": "trending2",
+            "size": "50mb"
+          },
+          {
+            "id": "18",
+            "title": "Corporate Culture",
+            "date": "2024-07-29",
+            "duration": "43:20",
+            "authorName": "Olivia Brown",
+            "image": "trending3",
+            "size": "52mb"
+          }
+        ]
+      }
+    ]
+  },
+  "authorPodcastModel": {
+    "headline": "Featured Authors",
+    "authorSectionModel": [
+      {
+        "id": "1",
+        "sectionName": "Top Tech Authors",
+        "authors": [
+          {
+            "id": "21",
+            "name": "John Doe",
+            "numberOfPodcasts": 15,
+            "image": "author1"
+          },
+          {
+            "id": "22",
+            "name": "Alice Brown",
+            "numberOfPodcasts": 10,
+            "image": "author2"
+          },
+          {
+            "id": "23",
+            "name": "Robert Brown",
+            "numberOfPodcasts": 8,
+            "image": "author3"
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "sectionName": "Health Experts",
+        "authors": [
+          {
+            "id": "26",
+            "name": "Jane Smith",
+            "numberOfPodcasts": 14,
+            "image": "author3"
+          },
+          {
+            "id": "27",
+            "name": "Eve Green",
+            "numberOfPodcasts": 9,
+            "image": "author1"
+          },
+          {
+            "id": "28",
+            "name": "Mike White",
+            "numberOfPodcasts": 11,
+            "image": "author2"
+          }
+        ]
+      }
+    ]
+  }
+}
