@@ -6,7 +6,8 @@
     "duration": "55:00",
     "authorName": "Alice Brown",
     "image": "trending1",
-    "size": "23mb"
+    "size": "23mb",
+    "url": "https://archive.rthk.hk/mp4/tv/2021/THKCCT2021M06000036.mp4"
   },
   {
     "id": "7",
@@ -15,7 +16,8 @@
     "duration": "40:20",
     "authorName": "Bob White",
     "image": "trending2",
-    "size": "23mb"
+    "size": "23mb",
+    "url": "https://archive.rthk.hk/mp4/tv/2021/THKCCT2021M06000036.mp4"
   },
   {
     "id": "8",
@@ -24,6 +26,7 @@
     "duration": "50:30",
     "authorName": "Diana Black",
     "image": "trending3",
-    "size": "23mb"
+    "size": "23mb",
+    "url": "https://archive.rthk.hk/mp4/tv/2021/THKCCT2021M06000036.mp4"
   }
 ]

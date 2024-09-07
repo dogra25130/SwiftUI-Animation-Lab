@@ -36,54 +36,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E0058658-C2DB-4D62-BAF2-AE2868EFD41B"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PCast/PCastAppView/PCastAppView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
-            landmarkName = "OverlayView"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "E0058658-C2DB-4D62-BAF2-AE2868EFD41B - 3a1cf2766b762d00"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PCast.PCastAppView.OverlayView.getter : some"
-                  moduleName = "PCast"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/abhishek.dogragrofers.com/Documents/Projects/PCast/PCast/PCastAppView/PCastAppView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "78"
-                  endingLineNumber = "78"
-                  offsetFromSymbolStart = "1180">
-               </Location>
-               <Location
-                  uuid = "E0058658-C2DB-4D62-BAF2-AE2868EFD41B - 3a1cf2766b762d00"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PCast.PCastAppView.OverlayView.getter : some"
-                  moduleName = "PCast"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/abhishek.dogragrofers.com/Documents/Projects/PCast/PCast/PCastAppView/PCastAppView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "78"
-                  endingLineNumber = "78"
-                  offsetFromSymbolStart = "872">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "6FF61F8C-B493-4CF5-8FF9-A6985DBCA6A4"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"

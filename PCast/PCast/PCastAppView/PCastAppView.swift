@@ -13,7 +13,7 @@ public enum AuthState {
 }
 
 class UserAuthState: ObservableObject {
-    @Published var currentState: AuthState = .unauthorised
+    @Published var currentState: AuthState = .authorised
 }
 
 struct PCastAppView: View {
@@ -22,10 +22,9 @@ struct PCastAppView: View {
         case profile
         case none
     }
-    
     @Environment(\.safeAreaInsets) var safeAreaInsets
     @StateObject var authState = UserAuthState()
-    @StateObject var router = Router()
+    @StateObject var deeplinkManager = DeeplinkManager.shared
     @StateObject var searchViewModel = SearchViewModel()
     @State var topBarButton: TopBarButton = .none
     @State var searchScrollViewContentSize: CGSize = .zero
@@ -33,7 +32,7 @@ struct PCastAppView: View {
     
     var body: some View {
         VStack(spacing: .zero) {
-            NavigationStack(path: $router.navPath) {
+            NavigationStack(path: $deeplinkManager.navPath) {
                 Group {
                     switch authState.currentState {
                     case .unauthorised:
@@ -42,8 +41,9 @@ struct PCastAppView: View {
                         HomeView()
                     }
                 }
+                .background(Color(hex: "091228"))
                 .environmentObject(authState)
-                .environmentObject(router)
+                .environmentObject(deeplinkManager)
                 .preferredColorScheme(.dark)
                 .navigationDestination(for: Deeplink.self) { value in Destination(for: value) }
             }
@@ -61,12 +61,18 @@ struct PCastAppView: View {
 }
 
 extension PCastAppView {
+    
+    @ViewBuilder
     func Destination(for value: Deeplink) -> some View {
-        switch value {
-        case .podcast(let model):
-            let viewModel = PodCastViewModel(model: model)
-            return PodcastPlayer(viewModel: viewModel)
+        Group {
+            switch value {
+            case .podcast(let model):
+                PodcastPlayer(viewModel: PodCastViewModel(model: model))
+            case .browse:
+                BrowseView()
+            }
         }
+        .toolbar(.hidden, for: .automatic)
     }
     
     @ViewBuilder
@@ -80,4 +86,12 @@ extension PCastAppView {
             EmptyView()
         }
     }
+    
+    func setProfileState(_ state: TopBarButton, completion: (() -> Void)? = nil) {
+        withAnimation { topBarButton = state } completion: { completion?() }
+    }
 }
+
+#Preview(body: {
+    PCastAppView()
+})

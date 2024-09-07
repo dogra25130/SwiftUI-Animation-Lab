@@ -10,14 +10,17 @@ import SwiftUI
 
 enum Deeplink: Hashable {
     case podcast(PodCastModel)
+    case browse
 }
 
-class Router: ObservableObject {
+class DeeplinkManager: ObservableObject {
+    
+    static let shared = DeeplinkManager()
     @Published var navPath: NavigationPath = NavigationPath()
     @Published var shouldShowBackButton: Bool = false
     private var cancellables = Set<AnyCancellable>()
     
-    init() {
+    private init() {
         $navPath
             .sink { [weak self] path in
                 withAnimation(.easeInOut) {
@@ -27,10 +30,10 @@ class Router: ObservableObject {
             .store(in: &cancellables)
     }
     
-    func navigateTo(_ page: Deeplink) {
-        withAnimation(.easeInOut) {
+    func navigateTo(_ page: Deeplink, shouldAnimate: Bool = true) {
+//        withAnimation(shouldAnimate ? .easeInOut : .none) {
             navPath.append(page)
-        }
+//        }
     }
     
     func goBack() {

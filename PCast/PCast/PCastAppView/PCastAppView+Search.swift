@@ -13,9 +13,7 @@ extension PCastAppView {
                 .onTapGesture {
                     isSearchFocused = false
                     resetSearchState()
-                    withAnimation {
-                        topBarButton = .none
-                    }
+                    setProfileState(.none)
                 }
             VStack {
                 SearchFieldView
