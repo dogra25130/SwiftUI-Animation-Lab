@@ -8,7 +8,8 @@
       "duration": "45:30",
       "authorName": "John Doe",
       "image": "hcard1",
-      "size": "52mb"
+      "size": "52mb",
+      "url": "https://archive.rthk.hk/mp4/tv/2021/THKCCT2021M06000036.mp4"
     },
     {
       "id": "2",
@@ -17,7 +18,8 @@
       "duration": "30:15",
       "authorName": "Jane Smith",
       "image": "hcard2",
-      "size": "52mb"
+      "size": "52mb",
+      "url": "https://archive.rthk.hk/mp4/tv/2021/THKCCT2021M06000036.mp4"
     },
     {
       "id": "3",
@@ -26,7 +28,8 @@
       "duration": "50:00",
       "authorName": "Mark Johnson",
       "image": "hcard3",
-      "size": "52mb"
+      "size": "52mb",
+      "url": "https://archive.rthk.hk/mp4/tv/2021/THKCCT2021M06000036.mp4"
     }
   ],
   "trendingPodcastModel": {
@@ -43,7 +46,8 @@
             "duration": "55:00",
             "authorName": "Alice Brown",
             "image": "trending1",
-            "size": "52mb"
+            "size": "52mb",
+            "url": "https://archive.rthk.hk/mp4/tv/2021/THKCCT2021M06000036.mp4"
           },
           {
             "id": "7",
@@ -52,7 +56,8 @@
             "duration": "40:20",
             "authorName": "Bob White",
             "image": "trending2",
-            "size": "52mb"
+            "size": "52mb",
+            "url": "https://archive.rthk.hk/mp4/tv/2021/THKCCT2021M06000036.mp4"
           },
           {
             "id": "8",
@@ -61,7 +66,8 @@
             "duration": "50:30",
             "authorName": "Diana Black",
             "image": "trending3",
-            "size": "52mb"
+            "size": "52mb",
+            "url": "https://archive.rthk.hk/mp4/tv/2021/THKCCT2021M06000036.mp4"
           }
         ]
       },
@@ -76,7 +82,8 @@
             "duration": "35:10",
             "authorName": "Eve Green",
             "image": "trending3",
-            "size": "52mb"
+            "size": "52mb",
+            "url": "https://archive.rthk.hk/mp4/tv/2021/THKCCT2021M06000036.mp4"
           },
           {
             "id": "12",
@@ -85,7 +92,8 @@
             "duration": "25:50",
             "authorName": "Charlie Black",
             "image": "trending1",
-            "size": "51mb"
+            "size": "51mb",
+            "url": "https://archive.rthk.hk/mp4/tv/2021/THKCCT2021M06000036.mp4"
           },
           {
             "id": "13",
@@ -94,7 +102,8 @@
             "duration": "30:00",
             "authorName": "Mike White",
             "image": "trending2",
-            "size": "55mb"
+            "size": "55mb",
+            "url": "https://archive.rthk.hk/mp4/tv/2021/THKCCT2021M06000036.mp4"
           }
         ]
       },
@@ -109,7 +118,8 @@
             "duration": "48:15",
             "authorName": "David Blue",
             "image": "trending1",
-            "size": "59mb"
+            "size": "59mb",
+            "url": "https://archive.rthk.hk/mp4/tv/2021/THKCCT2021M06000036.mp4"
           },
           {
             "id": "17",
@@ -118,7 +128,8 @@
             "duration": "60:00",
             "authorName": "Fiona Grey",
             "image": "trending2",
-            "size": "50mb"
+            "size": "50mb",
+            "url": "https://archive.rthk.hk/mp4/tv/2021/THKCCT2021M06000036.mp4"
           },
           {
             "id": "18",
@@ -127,7 +138,8 @@
             "duration": "43:20",
             "authorName": "Olivia Brown",
             "image": "trending3",
-            "size": "52mb"
+            "size": "52mb",
+            "url": "https://archive.rthk.hk/mp4/tv/2021/THKCCT2021M06000036.mp4"
           }
         ]
       }

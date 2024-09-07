@@ -15,12 +15,13 @@ extension SuggestedPodCardView {
                 .padding(32)
         }
         .frame(maxWidth: .infinity)
+        .padding(.top, safeAreaInsets.top + 45)
         .background(GradientBackground.opacity(viewModel.homeDataModel.isNil ? 0 : 1))
     }
     
     var SuggestedPodCardViewHorizontalScroll: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            LazyHStack {
+            LazyHStack(spacing: 20) {
                 ForEach(viewModel.homeDataModel?.suggestionPodCastModel ?? []) { model in
                     getSuggestionCardView(with: model)
                         .containerRelativeFrame(.horizontal)
@@ -36,7 +37,7 @@ extension SuggestedPodCardView {
     
     private func getSuggestionCardView(with model: PodCastModel) -> some View {
         Button {
-            router.navigateTo(.podcast(model))
+            deeplinkManager.navigateTo(.podcast(model))
         } label: {
             VStack(alignment: .leading, spacing: .zero) {
                 Text(model.title)

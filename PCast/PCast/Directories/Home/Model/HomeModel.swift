@@ -15,6 +15,7 @@ struct PodCastModel: Codable, Identifiable, Equatable, Hashable {
     let authorName: String
     let image: String
     let size: String
+    let url: String
     func hash(into hasher: inout Hasher) {
         hasher.combine(id)
     }

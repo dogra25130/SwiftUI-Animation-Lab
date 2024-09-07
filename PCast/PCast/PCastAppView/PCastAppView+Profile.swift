@@ -72,7 +72,9 @@ extension PCastAppView {
     private var ButtonsView: some View {
         VStack(alignment: .leading, spacing: 24) {
             Button {
-                
+                setProfileState(.none) {   
+                    deeplinkManager.navigateTo(.browse, shouldAnimate: false)
+                }
             } label: {
                 HStack(spacing: 30) {
                     Image(systemName: "circle.hexagongrid.circle")
@@ -191,9 +193,7 @@ extension PCastAppView {
             
                 .frame(width: 20, height: 20)
             Button {
-                withAnimation {
-                    topBarButton = .none
-                }
+                setProfileState(.none)
             } label: {
                 Image(systemName: "xmark")
                     .resizable()
@@ -234,5 +234,5 @@ extension PCastAppView {
 }
 
 #Preview {
-    HomeView()
+    PCastAppView()
 }

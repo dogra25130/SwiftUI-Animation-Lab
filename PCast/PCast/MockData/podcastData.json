@@ -17,7 +17,8 @@
       "duration": "30:45",
       "authorName": "John Doe",
       "image": "https://example.com/images/ai_intro.png",
-      "size": "52mb"
+      "size": "52mb",
+      "url": "https://archive.rthk.hk/mp4/tv/2021/THKCCT2021M06000036.mp4"
     },
     {
       "id": "episode_002",
@@ -26,7 +27,8 @@
       "duration": "45:30",
       "authorName": "Jane Smith",
       "image": "https://example.com/images/ml_basics.png",
-      "size": "55mb"
+      "size": "55mb",
+      "url": "https://archive.rthk.hk/mp4/tv/2021/THKCCT2021M06000031.mp4"
     },
     {
       "id": "episode_003",
@@ -35,7 +37,8 @@
       "duration": "50:20",
       "authorName": "John Doe",
       "image": "https://example.com/images/neural_networks.png",
-      "size": "58mb"
+      "size": "58mb",
+      "url": "https://archive.rthk.hk/mp4/tv/2021/THKCCT2021M06000032.mp4"
     },
     {
       "id": "episode_004",
@@ -44,7 +47,8 @@
       "duration": "40:15",
       "authorName": "Jane Smith",
       "image": "https://example.com/images/deep_learning.png",
-      "size": "42mb"
+      "size": "42mb",
+      "url": "https://archive.rthk.hk/mp4/tv/2021/THKCCT2021M06000036.mp4"
     },
     {
       "id": "episode_005",
@@ -53,7 +57,8 @@
       "duration": "55:10",
       "authorName": "John Doe",
       "image": "https://example.com/images/ai_healthcare.png",
-      "size": "50mb"
+      "size": "50mb",
+      "url": "https://archive.rthk.hk/mp4/tv/2021/THKCCT2021M06000036.mp4"
     },
     {
       "id": "episode_006",
@@ -62,7 +67,8 @@
       "duration": "42:30",
       "authorName": "Jane Smith",
       "image": "https://example.com/images/ai_ethics.png",
-      "size": "56mb"
+      "size": "56mb",
+      "url": "https://archive.rthk.hk/mp4/tv/2021/THKCCT2021M06000036.mp4"
     },
     {
       "id": "episode_007",
@@ -71,7 +77,8 @@
       "duration": "47:45",
       "authorName": "John Doe",
       "image": "https://example.com/images/ai_business.png",
-      "size": "62mb"
+      "size": "62mb",
+      "url": "https://archive.rthk.hk/mp4/tv/2021/THKCCT2021M06000036.mp4"
     },
     {
       "id": "episode_008",
@@ -80,7 +87,8 @@
       "duration": "36:20",
       "authorName": "Jane Smith",
       "image": "https://example.com/images/ai_gaming.png",
-      "size": "52mb"
+      "size": "52mb",
+      "url": "https://archive.rthk.hk/mp4/tv/2021/THKCCT2021M06000036.mp4"
     },
     {
       "id": "episode_009",
@@ -89,7 +97,8 @@
       "duration": "52:30",
       "authorName": "John Doe",
       "image": "https://example.com/images/ai_education.png",
-      "size": "59mb"
+      "size": "59mb",
+      "url": "https://archive.rthk.hk/mp4/tv/2021/THKCCT2021M06000036.mp4"
     },
     {
       "id": "episode_010",
@@ -98,7 +107,8 @@
       "duration": "48:15",
       "authorName": "Jane Smith",
       "image": "https://example.com/images/ai_everyday.png",
-      "size": "54mb"
+      "size": "54mb",
+      "url": "https://archive.rthk.hk/mp4/tv/2021/THKCCT2021M06000036.mp4"
     }
   ],
   "likeCount": 27451,

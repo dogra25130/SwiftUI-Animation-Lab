@@ -43,7 +43,6 @@ struct PodcastPlayer: View {
         .opacity(viewModel.data.isNil ? 0 : 1)
         .ignoresSafeArea(edges: .bottom)
         .background(Color.black)
-        .toolbar(.hidden, for: .automatic)
         .applyPodCastShimmerView(isLoading: viewModel.data.isNil)
         .task {
             await viewModel.fetchData()

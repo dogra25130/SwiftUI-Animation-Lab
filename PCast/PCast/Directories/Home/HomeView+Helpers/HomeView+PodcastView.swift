@@ -33,7 +33,7 @@ extension PodcastView {
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack(alignment: .top, spacing: 16) {
                             ForEach(currentTrendingPodcastModel.podcastModel) { model in
-                                PodCastCard(with: model)
+                                PodCastCard(model: model)
                                     .frame(width: 150)
                                 
                             }
@@ -46,7 +46,11 @@ extension PodcastView {
         }
     }
     
-    private func PodCastCard(with model: PodCastModel) -> some View {
+}
+
+struct PodCastCard: View {
+    let model: PodCastModel
+    var body: some View {
         VStack(alignment: .leading, spacing: .zero) {
             Image(model.image)
                 .resizable()
@@ -84,5 +88,10 @@ extension PodcastView {
             }
             .font(.setFont(.regular400, 12))
         }
+        .frame(width: 150, height: 300)
     }
+}
+
+#Preview {
+    HomeView()
 }

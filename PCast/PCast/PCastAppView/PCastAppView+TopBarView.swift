@@ -12,9 +12,9 @@ extension PCastAppView {
         HStack {
             Group {
                 Button {
-                    router.goBack()
+                    deeplinkManager.goBack()
                 } label: {
-                    if router.navPath.isEmpty {
+                    if deeplinkManager.navPath.isEmpty {
                         LogoView(logoSize: CGSize(width: 45, height: 45),
                                  fontStyle: .setFont(.medium500, 24))
                             .transition(.opacity)
@@ -34,9 +34,7 @@ extension PCastAppView {
             HStack(spacing: 20) {
                 Group {
                     Button {
-                        withAnimation {
-                            topBarButton = .search
-                        }
+                        setProfileState(.search)
                     } label: {
                         Image(systemName: "magnifyingglass")
                             .resizable()
@@ -45,9 +43,7 @@ extension PCastAppView {
                     }
                     
                     Button {
-                        withAnimation {
-                            topBarButton = .profile
-                        }
+                        setProfileState(.profile)
                     } label: {
                         Image(systemName: "line.3.horizontal")
                             .resizable()
@@ -65,3 +61,7 @@ extension PCastAppView {
     }
     
 }
+
+#Preview(body: {
+    PCastAppView()
+})

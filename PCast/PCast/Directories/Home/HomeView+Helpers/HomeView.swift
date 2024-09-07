@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
 
     @Environment(\.safeAreaInsets) var safeAreaInsets
-    @EnvironmentObject var router: Router
+    @EnvironmentObject var deeplinkManager: DeeplinkManager
     @StateObject var viewModel = HomeViewModel()
     @State private var isLoading = true
     
@@ -34,7 +34,6 @@ extension HomeView {
             }
         }
         .scrollIndicators(.hidden)
-        .padding(.top, safeAreaInsets.top + 45)
     }
 }
 
