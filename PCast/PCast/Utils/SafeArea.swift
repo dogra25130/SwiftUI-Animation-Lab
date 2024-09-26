@@ -6,7 +6,9 @@
 //
 
 import SwiftUI
-private struct SafeAreaInsetsKey: EnvironmentKey {
+private struct SafeAreaInsetsKey: @preconcurrency EnvironmentKey {
+    
+    @MainActor
     static var defaultValue: EdgeInsets {
         (UIApplication.shared.keyWindow?.safeAreaInsets ?? .zero).insets
     }

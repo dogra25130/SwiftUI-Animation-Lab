@@ -13,7 +13,7 @@ class SearchViewModel: ObservableObject {
     @Published var searchText = ""
     @Published var searchInProgress = false
     @Published var searchResults: [PodCastModel] = []
-    private var searchDebouncer = Debounce(timeInterval: 0.3, queue: .global(qos: .userInitiated))
+    private var searchDebouncer = Debounce()
     
     var cancellables = Set<AnyCancellable>()
     let usecase: SearchUseCase
@@ -35,9 +35,10 @@ class SearchViewModel: ObservableObject {
         if value.isEmpty {
             searchResults = []
         }
+        let usecase = usecase
         searchDebouncer.dispatch {
             Task {
-                let results = await self.usecase.search(for: value)
+                let results = await usecase.search(for: value)
                 self.searchInProgress = false
                 switch results {
                 case .success(let model):

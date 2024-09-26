@@ -127,9 +127,3 @@ struct BrowseView: View {
     }
 }
 
-#Preview {
-    PCastAppView()
-        .onAppear {
-            DeeplinkManager.shared.navigateTo(.browse)
-        }
-}

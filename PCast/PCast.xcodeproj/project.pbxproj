@@ -38,6 +38,15 @@
 		CF00D1512C6D8FBD00D39747 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF00D1502C6D8FBD00D39747 /* LogoView.swift */; };
 		CF00D1532C6D8FCE00D39747 /* PTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF00D1522C6D8FCE00D39747 /* PTextField.swift */; };
 		CF00D1552C6D8FDD00D39747 /* PButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF00D1542C6D8FDD00D39747 /* PButtons.swift */; };
+		CF20C0792C971C9B0081797E /* ShortsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF20C0782C971C9B0081797E /* ShortsModel.swift */; };
+		CF34C56B2CA3F85B00318C82 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF34C56A2CA3F85B00318C82 /* Coordinator.swift */; };
+		CF35E6D62C96B818009ED6E4 /* ShortsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF35E6D52C96B818009ED6E4 /* ShortsView.swift */; };
+		CF35E6D92C96B9F0009ED6E4 /* video_6.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF35E6D82C96B9F0009ED6E4 /* video_6.mp4 */; };
+		CF35E6DB2C96B9F8009ED6E4 /* video_5.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF35E6DA2C96B9F8009ED6E4 /* video_5.mp4 */; };
+		CF35E6DD2C96B9FE009ED6E4 /* video_4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF35E6DC2C96B9FE009ED6E4 /* video_4.mp4 */; };
+		CF35E6DF2C96BA05009ED6E4 /* video_3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF35E6DE2C96BA05009ED6E4 /* video_3.mp4 */; };
+		CF35E6E12C96BA0B009ED6E4 /* video_2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF35E6E02C96BA0B009ED6E4 /* video_2.mp4 */; };
+		CF35E6E32C96BA13009ED6E4 /* video_1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF35E6E22C96BA13009ED6E4 /* video_1.mp4 */; };
 		CF3634D22C797B9300057D04 /* PodcastPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3634D12C797B9300057D04 /* PodcastPlayer.swift */; };
 		CF3634D42C7987B700057D04 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3634D32C7987B700057D04 /* SearchViewModel.swift */; };
 		CF3634D72C7988E100057D04 /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3634D62C7988E100057D04 /* SearchService.swift */; };
@@ -64,6 +73,7 @@
 		CF8BC1D12C72FD26006ACA85 /* searchData.json in Resources */ = {isa = PBXBuildFile; fileRef = CF8BC1D02C72FD26006ACA85 /* searchData.json */; };
 		CF8BC1D32C7308D0006ACA85 /* DeeplinkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8BC1D22C7308D0006ACA85 /* DeeplinkManager.swift */; };
 		CF8BC1D72C7313D9006ACA85 /* Debounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8BC1D62C7313D9006ACA85 /* Debounce.swift */; };
+		CFA8A03D2C9EE00200CC39C9 /* LoopingScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA8A03C2C9EE00200CC39C9 /* LoopingScrollView.swift */; };
 		CFADF8DB2C83E70C00FA34ED /* PCastAppIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFADF8DA2C83E70C00FA34ED /* PCastAppIntents.swift */; };
 		CFADF8E42C846F2F00FA34ED /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFADF8E32C846F2F00FA34ED /* BrowseView.swift */; };
 		CFEEA3852C6DCBF100EBF0E4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEEA3842C6DCBF100EBF0E4 /* HomeView.swift */; };
@@ -96,7 +106,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CF00D0E82C6D800C00D39747 /* PCast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = PCast.app; path = "/Users/abhishek.dogragrofers.com/Documents/Projects/PCast/build/Debug-iphoneos/PCast.app"; sourceTree = "<absolute>"; };
 		CF00D0EB2C6D800C00D39747 /* PCastApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCastApp.swift; sourceTree = "<group>"; };
 		CF00D0EF2C6D800D00D39747 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF00D0F22C6D800D00D39747 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -129,6 +138,15 @@
 		CF00D1502C6D8FBD00D39747 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		CF00D1522C6D8FCE00D39747 /* PTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTextField.swift; sourceTree = "<group>"; };
 		CF00D1542C6D8FDD00D39747 /* PButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PButtons.swift; sourceTree = "<group>"; };
+		CF20C0782C971C9B0081797E /* ShortsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortsModel.swift; sourceTree = "<group>"; };
+		CF34C56A2CA3F85B00318C82 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		CF35E6D52C96B818009ED6E4 /* ShortsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortsView.swift; sourceTree = "<group>"; };
+		CF35E6D82C96B9F0009ED6E4 /* video_6.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video_6.mp4; sourceTree = "<group>"; };
+		CF35E6DA2C96B9F8009ED6E4 /* video_5.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video_5.mp4; sourceTree = "<group>"; };
+		CF35E6DC2C96B9FE009ED6E4 /* video_4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video_4.mp4; sourceTree = "<group>"; };
+		CF35E6DE2C96BA05009ED6E4 /* video_3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video_3.mp4; sourceTree = "<group>"; };
+		CF35E6E02C96BA0B009ED6E4 /* video_2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video_2.mp4; sourceTree = "<group>"; };
+		CF35E6E22C96BA13009ED6E4 /* video_1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video_1.mp4; sourceTree = "<group>"; };
 		CF3634D12C797B9300057D04 /* PodcastPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastPlayer.swift; sourceTree = "<group>"; };
 		CF3634D32C7987B700057D04 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		CF3634D62C7988E100057D04 /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
@@ -155,8 +173,10 @@
 		CF8BC1D02C72FD26006ACA85 /* searchData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = searchData.json; sourceTree = "<group>"; };
 		CF8BC1D22C7308D0006ACA85 /* DeeplinkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkManager.swift; sourceTree = "<group>"; };
 		CF8BC1D62C7313D9006ACA85 /* Debounce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debounce.swift; sourceTree = "<group>"; };
+		CFA8A03C2C9EE00200CC39C9 /* LoopingScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopingScrollView.swift; sourceTree = "<group>"; };
 		CFADF8DA2C83E70C00FA34ED /* PCastAppIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCastAppIntents.swift; sourceTree = "<group>"; };
 		CFADF8E32C846F2F00FA34ED /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
+		CFD3A9382C92CD4400DD6356 /* PCast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PCast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFEEA3842C6DCBF100EBF0E4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		CFEEA3872C6DDF2C00EBF0E4 /* homeData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = homeData.json; sourceTree = "<group>"; };
 		CFEEA3892C6DDFEC00EBF0E4 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
@@ -201,12 +221,14 @@
 				CF00D0EA2C6D800C00D39747 /* PCast */,
 				CFF908AC2C8C6E3C001FE485 /* PCastTests.xctest */,
 				CFF908AD2C8C6E3C001FE485 /* PCastTests */,
+				CFD3A9382C92CD4400DD6356 /* PCast.app */,
 			);
 			sourceTree = "<group>";
 		};
 		CF00D0EA2C6D800C00D39747 /* PCast */ = {
 			isa = PBXGroup;
 			children = (
+				CF35E6D72C96B9E1009ED6E4 /* Resources */,
 				CFADF8DD2C846E8500FA34ED /* Directories */,
 				CF3634D82C79891500057D04 /* PCastAppView */,
 				CF00D14C2C6D8CCE00D39747 /* Utils */,
@@ -214,8 +236,8 @@
 				CFEEA3862C6DDF1B00EBF0E4 /* MockData */,
 				CF00D0EB2C6D800C00D39747 /* PCastApp.swift */,
 				CFADF8DA2C83E70C00FA34ED /* PCastAppIntents.swift */,
-				CF3635032C7B394E00057D04 /* media.mp3 */,
 				CF8BC1D22C7308D0006ACA85 /* DeeplinkManager.swift */,
+				CF34C56A2CA3F85B00318C82 /* Coordinator.swift */,
 				CF00D14B2C6D82CB00D39747 /* Info.plist */,
 				CF00D0EF2C6D800D00D39747 /* Assets.xcassets */,
 				CF00D0F12C6D800D00D39747 /* Preview Content */,
@@ -303,6 +325,62 @@
 				CFEEA3932C6DEC2300EBF0E4 /* ShimmerView.swift */,
 			);
 			path = CommonViews;
+			sourceTree = "<group>";
+		};
+		CF20C0772C971C8E0081797E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF20C0782C971C9B0081797E /* ShortsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF35E6CF2C96B7A5009ED6E4 /* Shorts */ = {
+			isa = PBXGroup;
+			children = (
+				CF20C0772C971C8E0081797E /* Model */,
+				CF35E6D42C96B806009ED6E4 /* Service */,
+				CF35E6D32C96B7FD009ED6E4 /* ViewModel */,
+				CF35E6D22C96B7F5009ED6E4 /* Views */,
+			);
+			path = Shorts;
+			sourceTree = "<group>";
+		};
+		CF35E6D22C96B7F5009ED6E4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CF35E6D52C96B818009ED6E4 /* ShortsView.swift */,
+				CFA8A03C2C9EE00200CC39C9 /* LoopingScrollView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CF35E6D32C96B7FD009ED6E4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CF35E6D42C96B806009ED6E4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CF35E6D72C96B9E1009ED6E4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CF3635032C7B394E00057D04 /* media.mp3 */,
+				CF35E6D82C96B9F0009ED6E4 /* video_6.mp4 */,
+				CF35E6DA2C96B9F8009ED6E4 /* video_5.mp4 */,
+				CF35E6DC2C96B9FE009ED6E4 /* video_4.mp4 */,
+				CF35E6DE2C96BA05009ED6E4 /* video_3.mp4 */,
+				CF35E6E02C96BA0B009ED6E4 /* video_2.mp4 */,
+				CF35E6E22C96BA13009ED6E4 /* video_1.mp4 */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		CF3634D02C797B7300057D04 /* PodCastPlayer */ = {
@@ -413,6 +491,7 @@
 		CFADF8DC2C846E6E00FA34ED /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				CF35E6CF2C96B7A5009ED6E4 /* Shorts */,
 				CFADF8DF2C846F0000FA34ED /* Browse */,
 			);
 			path = Profile;
@@ -534,7 +613,7 @@
 			);
 			name = PCast;
 			productName = PCast;
-			productReference = CF00D0E82C6D800C00D39747 /* PCast.app */;
+			productReference = CFD3A9382C92CD4400DD6356 /* PCast.app */;
 			productType = "com.apple.product-type.application";
 		};
 		CFF908AB2C8C6E3C001FE485 /* PCastTests */ = {
@@ -610,15 +689,20 @@
 				CF00D1372C6D814E00D39747 /* Poppins-ExtraLight.ttf in Resources */,
 				CF00D1402C6D814E00D39747 /* Poppins-Light.ttf in Resources */,
 				CF00D13C2C6D814E00D39747 /* Poppins-ExtraBold.ttf in Resources */,
+				CF35E6DD2C96B9FE009ED6E4 /* video_4.mp4 in Resources */,
 				CF3634FD2C7AFB1900057D04 /* podcastData.json in Resources */,
 				CF00D1362C6D814E00D39747 /* Poppins-SemiBold.ttf in Resources */,
 				CF00D0F32C6D800D00D39747 /* Preview Assets.xcassets in Resources */,
 				CF00D1412C6D814E00D39747 /* Poppins-ThinItalic.ttf in Resources */,
+				CF35E6D92C96B9F0009ED6E4 /* video_6.mp4 in Resources */,
+				CF35E6DF2C96BA05009ED6E4 /* video_3.mp4 in Resources */,
 				CF00D1482C6D814E00D39747 /* Poppins-Bold.ttf in Resources */,
 				CF3635042C7B394E00057D04 /* media.mp3 in Resources */,
 				CF00D13D2C6D814E00D39747 /* Poppins-Black.ttf in Resources */,
 				CF00D13F2C6D814E00D39747 /* Poppins-SemiBoldItalic.ttf in Resources */,
 				CF00D0F02C6D800D00D39747 /* Assets.xcassets in Resources */,
+				CF35E6DB2C96B9F8009ED6E4 /* video_5.mp4 in Resources */,
+				CF35E6E12C96BA0B009ED6E4 /* video_2.mp4 in Resources */,
 				CF00D1392C6D814E00D39747 /* Poppins-BlackItalic.ttf in Resources */,
 				CF8BC1D12C72FD26006ACA85 /* searchData.json in Resources */,
 				CF00D1432C6D814E00D39747 /* Poppins-Italic.ttf in Resources */,
@@ -629,6 +713,7 @@
 				CF00D1462C6D814E00D39747 /* Poppins-Medium.ttf in Resources */,
 				CF00D13E2C6D814E00D39747 /* Poppins-LightItalic.ttf in Resources */,
 				CF00D1442C6D814E00D39747 /* Poppins-ExtraBoldItalic.ttf in Resources */,
+				CF35E6E32C96BA13009ED6E4 /* video_1.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -670,13 +755,16 @@
 				CF00D1512C6D8FBD00D39747 /* LogoView.swift in Sources */,
 				CF3634EE2C7AF2C800057D04 /* PodCastViewModel.swift in Sources */,
 				CF00D1212C6D80A300D39747 /* NetworkManager.swift in Sources */,
+				CF20C0792C971C9B0081797E /* ShortsModel.swift in Sources */,
 				CF3634DC2C7A145C00057D04 /* CurrentPodcastInfoView.swift in Sources */,
 				CF3634F32C7AFA0D00057D04 /* PodCastInfoModel.swift in Sources */,
+				CF35E6D62C96B818009ED6E4 /* ShortsView.swift in Sources */,
 				CFEEA38A2C6DDFEC00EBF0E4 /* HomeService.swift in Sources */,
 				CF3635002C7B14A700057D04 /* HomeShimmerView.swift in Sources */,
 				CF3634E42C7A14C200057D04 /* PodcastScrollableContentView.swift in Sources */,
 				CFEEA38E2C6DE01600EBF0E4 /* HomeViewModel.swift in Sources */,
 				CF00D0EC2C6D800C00D39747 /* PCastApp.swift in Sources */,
+				CFA8A03D2C9EE00200CC39C9 /* LoopingScrollView.swift in Sources */,
 				CFEEA38C2C6DDFFE00EBF0E4 /* HomeModel.swift in Sources */,
 				CFADF8E42C846F2F00FA34ED /* BrowseView.swift in Sources */,
 				CF3634D42C7987B700057D04 /* SearchViewModel.swift in Sources */,
@@ -688,6 +776,7 @@
 				CFEEA39C2C6E3B5F00EBF0E4 /* HomeView+GradientBackgroundView.swift in Sources */,
 				CFEEA39A2C6E3B4F00EBF0E4 /* HomeView+SuggestedPodCardView.swift in Sources */,
 				CF00D11C2C6D809100D39747 /* LoginViewModel.swift in Sources */,
+				CF34C56B2CA3F85B00318C82 /* Coordinator.swift in Sources */,
 				CF3634DE2C7A147800057D04 /* CurrentPodCastDescView.swift in Sources */,
 				CF3634D72C7988E100057D04 /* SearchService.swift in Sources */,
 				CF8BC1CF2C72E8FF006ACA85 /* PCastAppView+Search.swift in Sources */,
@@ -777,6 +866,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -832,6 +922,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 6.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -848,11 +939,13 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PCast/Info.plist;
+				INFOPLIST_KEY_NSFileProviderDomainUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -861,7 +954,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = podcase.com.PCast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -878,11 +971,13 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PCast/Info.plist;
+				INFOPLIST_KEY_NSFileProviderDomainUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -891,7 +986,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = podcase.com.PCast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -904,6 +999,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 626UL8K6Z5;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = podcase.com.PCastTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -922,6 +1018,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 626UL8K6Z5;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = podcase.com.PCastTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

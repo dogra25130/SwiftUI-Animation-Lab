@@ -12,6 +12,7 @@ enum LikeDisLikeStatus {
     case none
 }
 
+@MainActor
 class PodCastViewModel: NSObject, ObservableObject {
     
     let model: PodCastModel
@@ -73,22 +74,13 @@ extension PodCastViewModel {
     
     private func handleDownloadStatus(_ model: PodCastModel)  {
         usecase.startDownload(for: model) { [weak self] progress in
-            guard let self else { return }
-            Task {
-                await MainActor.run {
-                    self.currentDownloadingProgress = progress
-                }
-            }
+            self?.currentDownloadingProgress = progress
         } downloadCompletion: { [weak self] model in
             guard let self else { return }
-            Task {
-                await MainActor.run {
-                    self.downloadedQueue.append(model)
-                    self.downloadQueue = self.downloadQueue.filter { $0 != model }
-                    self.currentDownloadingModel = nil
-                    if let model = self.downloadQueue.first { self.handleDownloadStatus(model) }
-                }
-            }
+            self.downloadedQueue.append(model)
+            self.downloadQueue = self.downloadQueue.filter { $0 != model }
+            self.currentDownloadingModel = nil
+            if let model = self.downloadQueue.first { self.handleDownloadStatus(model) }
         }
     }
 }
