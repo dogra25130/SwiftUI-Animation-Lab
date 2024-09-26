@@ -73,7 +73,7 @@ extension PCastAppView {
         VStack(alignment: .leading, spacing: 24) {
             Button {
                 setProfileState(.none) {   
-                    deeplinkManager.navigateTo(.browse, shouldAnimate: false)
+                    coordinator.navigateTo(.browse, shouldAnimate: false)
                 }
             } label: {
                 HStack(spacing: 30) {
@@ -87,14 +87,16 @@ extension PCastAppView {
             }
             
             Button {
-                
+                setProfileState(.none) {
+                    coordinator.navigateTo(.Reels, shouldAnimate: false)
+                }
             } label: {
                 HStack(spacing: 30) {
                     Image(systemName: "eye")
                         .resizable()
                         .frame(width: 20, height: 16)
                     
-                    Text("Subscribed")
+                    Text("Reels")
                     Spacer()
                 }
             }

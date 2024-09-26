@@ -37,7 +37,7 @@ extension SuggestedPodCardView {
     
     private func getSuggestionCardView(with model: PodCastModel) -> some View {
         Button {
-            deeplinkManager.navigateTo(.podcast(model))
+            coordinator.navigateTo(.podcast(model))
         } label: {
             VStack(alignment: .leading, spacing: .zero) {
                 Text(model.title)

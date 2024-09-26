@@ -13,7 +13,7 @@ public enum AuthState {
 }
 
 class UserAuthState: ObservableObject {
-    @Published var currentState: AuthState = .authorised
+    @Published var currentState: AuthState = .unauthorised
 }
 
 struct PCastAppView: View {
@@ -24,15 +24,14 @@ struct PCastAppView: View {
     }
     @Environment(\.safeAreaInsets) var safeAreaInsets
     @StateObject var authState = UserAuthState()
-    @StateObject var deeplinkManager = DeeplinkManager.shared
     @StateObject var searchViewModel = SearchViewModel()
+    @StateObject var coordinator = Coordinator.shared
     @State var topBarButton: TopBarButton = .none
     @State var searchScrollViewContentSize: CGSize = .zero
     @FocusState var isSearchFocused: Bool
-    
     var body: some View {
         VStack(spacing: .zero) {
-            NavigationStack(path: $deeplinkManager.navPath) {
+            NavigationStack(path: $coordinator.navPath) {
                 Group {
                     switch authState.currentState {
                     case .unauthorised:
@@ -43,9 +42,9 @@ struct PCastAppView: View {
                 }
                 .background(Color(hex: "091228"))
                 .environmentObject(authState)
-                .environmentObject(deeplinkManager)
+                .environmentObject(coordinator)
                 .preferredColorScheme(.dark)
-                .navigationDestination(for: Deeplink.self) { value in Destination(for: value) }
+                .navigationDestination(for: Deeplink.self) { value in coordinator.Destination(for: value) }
             }
         }
         .overlay { OverlayView }
@@ -61,19 +60,6 @@ struct PCastAppView: View {
 }
 
 extension PCastAppView {
-    
-    @ViewBuilder
-    func Destination(for value: Deeplink) -> some View {
-        Group {
-            switch value {
-            case .podcast(let model):
-                PodcastPlayer(viewModel: PodCastViewModel(model: model))
-            case .browse:
-                BrowseView()
-            }
-        }
-        .toolbar(.hidden, for: .automatic)
-    }
     
     @ViewBuilder
     var OverlayView: some View {

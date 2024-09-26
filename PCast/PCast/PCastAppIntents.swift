@@ -13,7 +13,7 @@ struct PlayTrendingPodcast: AppIntent {
     
     @MainActor
     func perform() async throws -> some IntentResult {
-        DeeplinkManager.shared.navigateTo(.podcast(PodCastModel(id: "",
+        Coordinator.shared.navigateTo(.podcast(PodCastModel(id: "",
                                                                 title: "",
                                                                 date: "",
                                                                 duration: "",

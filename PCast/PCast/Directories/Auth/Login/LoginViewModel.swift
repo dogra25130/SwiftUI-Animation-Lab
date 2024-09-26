@@ -47,6 +47,7 @@ class LoginViewModel: ObservableObject {
     
     func loginUser() {
         guard !isLoading else { return }
+        let usecase = usecase
         Task {
             do {
                 let responseModel = try await usecase.verify(with: LoginModel(email: email))

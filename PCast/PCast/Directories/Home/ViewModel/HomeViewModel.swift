@@ -8,7 +8,7 @@
 import Combine
 
 @MainActor
-class HomeViewModel: ObservableObject {
+final class HomeViewModel: ObservableObject {
     @Published var homeDataModel: HomeModel? { didSet { setupSection() } }
     @Published var currentTrendingPodcastModel: PodCastSectionModel?
     @Published var currentAuthor: AuthorSectionModel?
@@ -28,7 +28,9 @@ class HomeViewModel: ObservableObject {
 
 extension HomeViewModel {
     
+    
     func fetchData() {
+        let usecase = usecase
         Task {
             let homeData = await usecase.fetchData()
             switch homeData {
@@ -37,7 +39,6 @@ extension HomeViewModel {
                 
             case .failure(let err):
                 print(err)
-//                 break
             }
         }
     }

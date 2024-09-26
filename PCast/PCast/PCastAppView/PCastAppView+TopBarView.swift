@@ -12,9 +12,9 @@ extension PCastAppView {
         HStack {
             Group {
                 Button {
-                    deeplinkManager.goBack()
+                    coordinator.goBack()
                 } label: {
-                    if deeplinkManager.navPath.isEmpty {
+                    if coordinator.navPath.isEmpty {
                         LogoView(logoSize: CGSize(width: 45, height: 45),
                                  fontStyle: .setFont(.medium500, 24))
                             .transition(.opacity)

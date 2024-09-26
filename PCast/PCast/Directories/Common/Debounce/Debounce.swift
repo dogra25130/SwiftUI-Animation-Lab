@@ -7,15 +7,8 @@
 
 import Foundation
 final class Debounce {
-    private let timeInterval: TimeInterval
-    private let queue: DispatchQueue
+    private let timeInterval: TimeInterval = 0.3
     private var dispatchWorkItem = DispatchWorkItem(block: {})
-    
-    init(timeInterval: TimeInterval, queue: DispatchQueue, dispatchWorkItem: DispatchWorkItem = DispatchWorkItem(block: {})) {
-        self.timeInterval = timeInterval
-        self.queue = queue
-        self.dispatchWorkItem = dispatchWorkItem
-    }
     
     func dispatch(_ block: @escaping () -> Void) {
         dispatchWorkItem.cancel()
@@ -23,6 +16,6 @@ final class Debounce {
             block()
         }
         dispatchWorkItem = workItem
-        queue.asyncAfter(deadline: .now() + 0.3, execute: dispatchWorkItem)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3, execute: dispatchWorkItem)
     }
 }
